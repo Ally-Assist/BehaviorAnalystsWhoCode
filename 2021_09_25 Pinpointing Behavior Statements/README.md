@@ -18,7 +18,7 @@ The focus of the presentation, or way or another, will be software development p
 
 The long term goal is to help foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective. Or something.
 
-## Rationale
+### Rationale
 
 David and I discussed options. The basic drivers in developing the presentation will be:
 
@@ -39,7 +39,7 @@ David and I discussed options. The basic drivers in developing the presentation 
 4. After discussion with, and the approval of, Julie Smith, I will use some sort of classification of textual statements as behavioral (or not) as the initial scenario.
 
 
-## General Format
+### General Format
 
 1. Present the behavior analytic scenario as the motivation for the project.
 
