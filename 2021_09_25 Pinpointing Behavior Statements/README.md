@@ -35,5 +35,8 @@ David and I discussed options. The basic drivers in developing the presentation 
 4. After discussion with, and the approval of, Julie Smith, I will use some sort of classification of textual statements as behavioral (or not) as the initial scenario.
 
 
+## General Format
+
+Present the behavior analytic scenario as the motivation for the project
 
 
