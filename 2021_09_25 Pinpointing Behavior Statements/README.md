@@ -53,7 +53,32 @@ David and I discussed options. The basic drivers in developing the presentation 
 
 6. Where to go from here? What might a next step be? Do it in another presentation?
 
---- ---
+---
+
+
+# Scenario
+
+Collecting and evaluating statements of behavior as part of identifying behaviors important in producing some result, otherwise known as, "pinpointing vital behaviors".
+
+Would like software that would facilitate the process of training people to do the classification, and to collect classifications of large volumes of behavior statements.
+
+The general criteria. To be a behavior, for our purposes:
+
+1. Measurable: Must be observable by others than the performer: seen, heard, felt, smelled, tasted.
+
+2. Objective: Must be confirmable by others.
+
+3. Active: Only a living organism can do it (see also: Dead Man Test)
+
+4. Neutral: Non-biased, non-judgmental, non-emotional.
+
+A few relevant articles:
+
+1. A "must read" by Critchfield and Shue: [The Dead Man Test: a Preliminary Experimental Analysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6269387/pdf/40617_2018_Article_239.pdf)
+
+2. [How to Pinpoint Behavior Effectively](https://centralreach.com/how-to-pinpoint-behavior-effectively/): More inclusive than our current project. We will focus on the "Movement Cycle" (action verb and object).
+
+3. [Seleting a Pinpoint](https://centralreach.com/how-to-pinpoint-behavior-effectively/).
 
 
 
