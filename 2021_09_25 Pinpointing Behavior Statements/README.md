@@ -8,6 +8,8 @@ tom.donaldson@performanceally.com
 
 Created: Sunday 22 August 2021
 
+---
+
 # Overview
 
 During a lengthy [discussion with the Slack channel owner, David Cox](https://behavioranaly-yw87919.slack.com/archives/D02APN949UL), I agreed to do one presentation to the Behavior Analysts Who Code Slack channel on Sunday 25 September 2021 @ 12:00 eastern USA time.
@@ -50,6 +52,8 @@ David and I discussed options. The basic drivers in developing the presentation 
 5. Demo with live development project (will have basic framework in place, then do some coding to illustrate one important concept in more detail, e.g., test driven design)
 
 6. Where to go from here? What might a next step be? Do it in another presentation?
+
+---
 
 
 
