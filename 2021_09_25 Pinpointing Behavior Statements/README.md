@@ -1,4 +1,4 @@
-# 2021_09_25 Presentation
+# 2021_09_25 Pinpointing: Is It A Behavior?
 
 Material related to a presentation on Sunday 25 September 2021 @ 12:00 to the Slack channel, [Behavior Analysts Who Code](https://www.codingbehavioranalysts.org)
 
@@ -8,9 +8,13 @@ tom.donaldson@performanceally.com
 
 Created: Sunday 22 August 2021
 
-# Purpose
+# Overview
 
 During a lengthy [discussion with the Slack channel owner, David Cox](https://behavioranaly-yw87919.slack.com/archives/D02APN949UL), I agreed to do one presentation to the Behavior Analysts Who Code Slack channel on Sunday 25 September 2021 @ 12:00 eastern USA time.
+
+The focus of the presentation, or way or another, will be software development practices wrapped up in a behavior analytic scenario.
+
+## Rationale
 
 David and I discussed options. The basic drivers in developing the presentation will be:
 
@@ -29,7 +33,6 @@ David and I discussed options. The basic drivers in developing the presentation 
 3. For the project to be intrinsically interesting to me, and to maintain my responding, it should be in some way relevant to my current work. That is, applied behavior analysis in general, or OBM in particular.
 
 4. After discussion with, and the approval of, Julie Smith, I will use some sort of classification of textual statements as behavioral (or not) as the initial scenario.
-
 
 
 
