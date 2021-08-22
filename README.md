@@ -3,7 +3,7 @@
 Projects related to the Slack channel, [Behavior Analysts Who Code](https://www.codingbehavioranalysts.org)
 
 Tom Donaldson
-tom.donaldson@performanceall.com
+tom.donaldson@performanceally.com
 Created: Sunday 22 August 2021
 
 # Purpose
