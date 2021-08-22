@@ -30,7 +30,7 @@ David and I discussed options. The basic drivers in developing the presentation 
 
 3. The "software development project" must be in some way relevant to behavior analysis. 
 
-3. For the project to be intrinsically interesting to me, and to maintain my responding, it should be in some way relevant to my current work. That is, applied behavior analysis in general, or OBM in particular.
+3. For the project to be intrinsically interesting to me, and to maintain my responding, it should be in some way relevant to my current work. That is, applied behavior analysis in general, or OBM in particular (vs basic experimental or neural nets).
 
 4. After discussion with, and the approval of, Julie Smith, I will use some sort of classification of textual statements as behavioral (or not) as the initial scenario.
 
