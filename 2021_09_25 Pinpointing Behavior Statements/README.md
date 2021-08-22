@@ -14,7 +14,7 @@ During a lengthy [discussion with the Slack channel owner, David Cox](https://be
 
 The focus of the presentation, or way or another, will be software development practices wrapped up in a behavior analytic scenario.
 
-The long term goal is to help foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as their interactions with professional software development groups.
+The long term goal is to help foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective. Or something.
 
 ## Rationale
 
