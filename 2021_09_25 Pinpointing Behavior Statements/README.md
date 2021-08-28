@@ -2,6 +2,9 @@
 
 Material related to a presentation on Sunday 25 September 2021 @ 12:00 to the Slack channel, [Behavior Analysts Who Code](https://www.codingbehavioranalysts.org)
 
+***This will change frequently up to the presentation date***
+
+
 Tom Donaldson
 
 tom.donaldson@performanceally.com
@@ -41,7 +44,7 @@ David and I discussed options. The basic drivers in developing the presentation 
 
 ### General Format
 
-Each of these topics will be addressed briefly. Goal is to keep it down to about 45 minutes. Step 6, the demo, will be longest.
+Each of these topics will be addressed briefly. Goal is to keep it down to about 45 minutes. Step 7, the demo, will be longest.
 
 1. Behavior analytic scenario as the motivation for the project.
 
@@ -117,9 +120,19 @@ Add user login and record/track responses to each stimuli per user in a local da
 
 ---
 
-# 3. Basic Requirements of the Prototype
+# 3. Basic Requirements of Prototype
 
 ***How will I know when I am done?***
+
+This will be an exceedingly simple initial version:
+
+1. A set of predefined statements as test data.
+
+2. A GUI to present statements, and collect categorization responses.
+
+3. Simple data collection to record responses per statement.
+
+4. Simple table and/or graph to summarize results.
 
 
 ---
