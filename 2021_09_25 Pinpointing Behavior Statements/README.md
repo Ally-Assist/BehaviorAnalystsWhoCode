@@ -151,9 +151,17 @@ The most common, and most basic software design pattern over the past few decade
 
 The "model" encapsulates all of the data and the behavior. It defines the full set of possible interactions with, or actions on, the data. It is generally embodied as a code module (a.k.a., a library, a package). Thus, the primary user user for a model is generally a programmer, and the interface is an [application programmers' interface (API)](https://en.wikipedia.org/wiki/API).
 
-#### It is a model in the sense of "simulation". It is a functional model. The model defines:
+The model is a functional entity in the sense of a "simulation". The model can be considered a type of organism, though generally a very simple organism. It will generally also include a structural ("Dead Man") entity: the ***data*** model. 
 
-1. Under what conditions (previous behavior, request parameters, etc.) a particular behavior can be requested.
+#### Functional model: a simulation
+
+The model owns, encapsulates, protects, provides access to, all data. The model provides all behaviors that affect the internal state of the model, and which provide services to the "outside world".
+
+The behavior requests are generally referred to as [methods](https://en.wikipedia.org/wiki/Method_(computer_programming)), which is short for "method by which some action is accomplished". We might also consider a method as a form of vital behavior that impacts some particular outcomes.
+
+The model defines:
+
+1. Under what conditions (previous behaviors, request parameters, etc.) a particular behavior can be requested.
 
 2. The effect on the application state/environment if the request succeeds (or does not).
 
