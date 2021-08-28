@@ -147,6 +147,12 @@ This will be an exceedingly simple initial version:
 
 The most common, and most basic software design pattern over the past few decades is known as [Model-view-controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller). 
 
+It goes hand-in-hand with [object oriented programming](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f), and seems to originate with the development of the Smalltalk language in the late 1960s.
+
+Here is a very interesting presentation by the person who coined the term "object oriented programming", Alan Kay. Alan is absolutely brilliant, and somewhat controversial:
+
+- [The Computer Revolution Hasn't Happened Yet](https://www.youtube.com/watch?v=aYT2se94eU0)
+
 ### Model: the Simulation
 
 The "model" encapsulates all of the data and the behavior. It defines the full set of possible interactions with, or actions on, the data. It is generally embodied as a code module (a.k.a., a library, a package). Thus, the primary user user for a model is generally a programmer, and the interface is an [application programmers' interface (API)](https://en.wikipedia.org/wiki/API).
@@ -157,7 +163,7 @@ The model is a functional entity in the sense of a "simulation". The model can b
 
 The model owns, encapsulates, protects, provides access to, all data. The model provides all behaviors that affect the internal state of the model, and which provide services to the "outside world".
 
-The behavior requests are generally referred to as [methods](https://en.wikipedia.org/wiki/Method_(computer_programming)), which is short for "method by which some action is accomplished". We might also consider a method as a form of vital behavior that impacts some particular outcomes.
+The behavior requests are generally referred to as messages, but more commonly as  [methods](https://en.wikipedia.org/wiki/Method_(computer_programming)), which should be viewed as short for "method by which some action is accomplished". We might also consider a method as a form of vital behavior that impacts some particular outcomes.
 
 The model defines:
 
