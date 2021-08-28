@@ -149,7 +149,7 @@ The most common, and most basic, application software design pattern over the pa
 
 ### Model: The behaving organism
 
-The "model" encapsulates all of the data and the behavior. It defines the full set of possible interactions with, or actions on, the data. It is generally embodied as a code module (a.k.a., a library, a package). Thus, the primary user user for a model is generally a programmer, and the interface is an [application programmers' interface (API)](https://en.wikipedia.org/wiki/API).
+The "model" encapsulates all of the data and the behavior. It defines the full set of possible interactions with, or actions on, the data. It is generally embodied as a code module (a.k.a., a library, a package). Thus, the primary user user for a model is generally a programmer, and the interface is an [application programming interface (API)](https://en.wikipedia.org/wiki/API).
 
 #### Functional model: a simulation
 
@@ -167,20 +167,31 @@ The model defines:
 
 #### Data model: the proverbial "Dead Man"
 
-Besides behavior the model includes data, which is the internal state of the organism, its "guts". These guts are part of the functional model, but are frequently externalized as a storage format, such as a [relational database entity-relationship model](https://en.wikipedia.org/wiki/Entity–relationship_model).
+Besides behavior, the model includes data, which is the internal state of the organism, its "guts". These guts are part of the functional model, but are frequently externalized as a storage format, such as a [relational database entity-relationship model](https://en.wikipedia.org/wiki/Entity–relationship_model).
 
-The data model only defines a bare outline of the data items in the model, and to some extent, how the data items are related. It does not, and cannot, define behavior. Just be aware that the *data model* is not *the model*; it does not include behavior.
+The data model only defines a bare outline of the data items in the model, and to some extent, how the data items are related. It does not, and cannot, define behavior. Just be aware that the ***data*** *model* is not ***the*** *model*; it does not include behavior.
 
 That is, the data model is structural; the overall model is functional.
 
 ### View-Controller: The User Interface
 
+In our case, the "view-controller" components of the MVC pattern will be combined into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). This intermixing is pretty standard, unless you are developing the individual "views" and "controllers" (and sometimes even then).
 
+Note that the user interface could take different forms, such as:
 
-For our purposes, we will separate out the basic data and the actions permitted on that data into the "model", but we will combine the "view-controller" into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). 
+1. a [command line (CLI)](https://en.wikipedia.org/wiki/Command-line_interface), 
 
-Note that the user interface could take different forms, such as a command line (CLI), an application programmers' interface (API), or multiple GUIs on a variety of platforms (e.g., iOS, macOS, tvOS, watchOS, MS Windows, Xamarin). All of these interfaces could be implemented against the same model.
+2. an [application programming interface (API)](https://en.wikipedia.org/wiki/API), or 
 
+3. multiple [graphical user interfaces (GUIs)](https://en.wikipedia.org/wiki/Graphical_user_interface) on a variety of platforms (e.g., iOS, macOS, tvOS, watchOS, MS Windows, Xamarin, browser interfaces). All of these interfaces could be implemented against the same model.
+
+## 4.2 Model Components
+
+*statements, responses, ...*
+
+## 4.3 View-Controller Components
+
+*window containing view of current statement, possible categorization choices, controls to make responses and traverse statements; data displays*
 
 
 ---
