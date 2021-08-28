@@ -147,19 +147,13 @@ This will be an exceedingly simple initial version:
 
 The most common, and most basic, application software design pattern over the past few decades is known as [Model-view-controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller).  It goes hand-in-hand with [object oriented programming](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f), and seems to originate with the development of the Smalltalk language in the late 1960s.
 
-Here is a very interesting presentation by the person who coined the term "object oriented programming", Alan Kay. Alan is absolutely brilliant, but somewhat controversial:
-
-- [The Computer Revolution Hasn't Happened Yet](https://www.youtube.com/watch?v=aYT2se94eU0)
-
 ### Model: The behaving organism
 
 The "model" encapsulates all of the data and the behavior. It defines the full set of possible interactions with, or actions on, the data. It is generally embodied as a code module (a.k.a., a library, a package). Thus, the primary user user for a model is generally a programmer, and the interface is an [application programmers' interface (API)](https://en.wikipedia.org/wiki/API).
 
-The model is a functional entity in the sense of a "simulation". The model can be considered a type of organism, though generally a very simple organism. It will generally also include a structural ("Dead Man") entity: the ***data*** model. 
+The model is a functional entity in the sense of a "simulation". The model can be considered a type of organism, though generally a very simple organism. Besides behavior it includes data, which is the internal state of the organism, its "guts". The guts are often externalized as a storage format, such as a [relational database entity-relationship model](https://en.wikipedia.org/wiki/Entity–relationship_model).
 
-1. Simulation: the functional software organism.
-
-2. Storage: the structural data model
+The "dead man" storage format is part of the functional model, but is presented separately often enough to call it out. 
 
 #### Functional model: a simulation
 
@@ -178,7 +172,6 @@ The model defines:
 #### Data model: the proverbial "Dead Man"
 
 In contrast, within the software development environment, you will also hear the phrase "data model", which normally refers to a storage format in a relational database management system. It only defines a bare outline of the data items in the model, and to some extent, how the data items are related. It does not, and cannot, define behavior. That is, the data model is structural; the overall model is functional.
-
 
 ### View-Controller: The User Interface
 
