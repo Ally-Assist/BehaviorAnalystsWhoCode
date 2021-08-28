@@ -151,10 +151,6 @@ The most common, and most basic, application software design pattern over the pa
 
 The "model" encapsulates all of the data and the behavior. It defines the full set of possible interactions with, or actions on, the data. It is generally embodied as a code module (a.k.a., a library, a package). Thus, the primary user user for a model is generally a programmer, and the interface is an [application programmers' interface (API)](https://en.wikipedia.org/wiki/API).
 
-The model is a functional entity in the sense of a "simulation". The model can be considered a type of organism, though generally a very simple organism. Besides behavior it includes data, which is the internal state of the organism, its "guts". The guts are often externalized as a storage format, such as a [relational database entity-relationship model](https://en.wikipedia.org/wiki/Entity–relationship_model).
-
-The "dead man" storage format is part of the functional model, but is presented separately often enough to call it out. 
-
 #### Functional model: a simulation
 
 The model owns, encapsulates, protects, provides access to, all data. The model provides all behaviors that affect the internal state of the model, and which provide services to the "outside world".
@@ -171,7 +167,11 @@ The model defines:
 
 #### Data model: the proverbial "Dead Man"
 
-In contrast, within the software development environment, you will also hear the phrase "data model", which normally refers to a storage format in a relational database management system. It only defines a bare outline of the data items in the model, and to some extent, how the data items are related. It does not, and cannot, define behavior. That is, the data model is structural; the overall model is functional.
+Besides behavior the model includes data, which is the internal state of the organism, its "guts". These guts are part of the functional model, but are frequently externalized as a storage format, such as a [relational database entity-relationship model](https://en.wikipedia.org/wiki/Entity–relationship_model).
+
+The data model only defines a bare outline of the data items in the model, and to some extent, how the data items are related. It does not, and cannot, define behavior. Just be aware that the *data model* is not *the model*; it does not include behavior.
+
+That is, the data model is structural; the overall model is functional.
 
 ### View-Controller: The User Interface
 
