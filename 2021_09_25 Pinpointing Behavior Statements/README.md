@@ -1,5 +1,7 @@
 # 2021_09_25 Pinpointing: Is It A Behavior?
 
+Subtitle: **A Quick Overview of Professional-Style Software Development in Python**
+
 Material related to a presentation on Sunday 25 September 2021 @ 12:00 to the Slack channel, [Behavior Analysts Who Code](https://www.codingbehavioranalysts.org)
 
 ***This will change frequently up to the presentation date***
@@ -145,9 +147,28 @@ This will be an exceedingly simple initial version:
 
 The most common, and most basic software design pattern over the past few decades is known as [Model-view-controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller). 
 
-For our purposes, we will separate out the basic data and the actions permitted on that data into the "model", but we will combine the "view-controller" into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). 
+### Model: the Simulation
 
-The "model" encapsulates all of the data and the behavior. It defines the full set of possible interactions with, or actions on, the data. It is a model in the sense of "simulation".
+The "model" encapsulates all of the data and the behavior. It defines the full set of possible interactions with, or actions on, the data. It is generally embodied as a code module (a.k.a., a library, a package). Thus, the primary user user for a model is generally a programmer, and the interface is an [application programmers' interface (API)](https://en.wikipedia.org/wiki/API).
+
+#### It is a model in the sense of "simulation". It is a functional model. The model defines:
+
+1. Under what conditions (previous behavior, request parameters, etc.) a particular behavior can be requested.
+
+2. The effect on the application state/environment if the request succeeds (or does not).
+
+3. The values returned in response to the request, if any.
+
+#### Data model: the proverbial "Dead Man"
+
+In contrast, within the software development environment, you will also hear the phrase "data model", which normally refers to a storage format in a relational database management system. It only defines a bare outline of the data items in the model, and to some extent, how the data items are related. It does not, and cannot, define behavior. That is, the data model is structural; the overall model is functional.
+
+
+### View-Controller: The User Interface
+
+
+
+For our purposes, we will separate out the basic data and the actions permitted on that data into the "model", but we will combine the "view-controller" into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). 
 
 Note that the user interface could take different forms, such as a command line (CLI), an application programmers' interface (API), or multiple GUIs on a variety of platforms (e.g., iOS, macOS, tvOS, watchOS, MS Windows, Xamarin). All of these interfaces could be implemented against the same model.
 
