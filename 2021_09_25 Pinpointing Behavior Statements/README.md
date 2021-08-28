@@ -141,6 +141,16 @@ This will be an exceedingly simple initial version:
 
 ***What code will I develop?***
 
+## 4.1 Design Pattern: MVC
+
+The most common, and most basic software design pattern over the past few decades is known as [Model-view-controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller). 
+
+For our purposes, we will separate out the basic data and the actions permitted on that data into the "model", but we will combine the "view-controller" into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). 
+
+The "model" encapsulates all of the data and the behavior. It defines the full set of possible interactions with, or actions on, the data. It is a model in the sense of "simulation".
+
+Note that the user interface could take different forms, such as a command line (CLI), an application programmers' interface (API), or multiple GUIs on a variety of platforms (e.g., iOS, macOS, tvOS, watchOS, MS Windows, Xamarin). All of these interfaces could be implemented against the same model.
+
 
 
 ---
