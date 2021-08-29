@@ -48,7 +48,9 @@ David and I discussed options. The basic drivers in developing the presentation 
 
 ### General Format
 
-Each of these topics will be addressed briefly. Goal is to keep it down to about 45 minutes. Step 7, the demo, will be longest.
+Each of these topics will be addressed briefly. Links are included for more in-depth info.
+
+Duration of the presentation: potentially 90 minutes, with possibly 60 minutes for the demo and discussion, and 30 to glide over this written material.
 
 1. Behavior analytic scenario as the motivation for the project.
 
