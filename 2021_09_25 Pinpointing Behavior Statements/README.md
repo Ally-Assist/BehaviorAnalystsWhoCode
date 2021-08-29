@@ -191,9 +191,13 @@ Note that the user interface could take different forms, such as:
 
 ## 4.2 Model Components
 
+***TO BE DONE***
+
 *statements, responses, ...*
 
 ## 4.3 View-Controller Components
+
+***TO BE DONE***
 
 *window containing view of current statement, possible categorization choices, controls to make responses and traverse statements; data displays*
 
@@ -245,12 +249,16 @@ This is a very cursory overview of the tools I use the most in a Python project.
 
 # 6. Development Process
 
+***TO BE DONE***
+
 ***What are the steps in using the tools to develop the major components and verifying that they work and will continue working?***
 
 
 ---
 
 # 7. Demo: Test Driven Design (TDD)
+
+***TO BE DONE***
 
 ***How will I use the tools to create "provably correct" software?***
 
@@ -284,6 +292,8 @@ If Ryan is not available, might this be time for "audience participation"?
 ---
 
 # 8. Where to From Here?
+
+***TO BE DONE***
 
 ***Is the end goal still the same? What is the next enhancement toward the goal?***
 
