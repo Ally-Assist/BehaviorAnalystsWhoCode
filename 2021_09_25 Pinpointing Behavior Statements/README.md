@@ -93,7 +93,7 @@ A few relevant articles:
 
 2. [How to Pinpoint Behavior Effectively](https://centralreach.com/how-to-pinpoint-behavior-effectively/): More inclusive than our current project. We will focus on the "Movement Cycle" (action verb and object).
 
-3. [Vital Behaviors](https://sourcesofinsight.com/vital-behaviors/.
+3. [Vital Behaviors](https://sourcesofinsight.com/vital-behaviors/)
 
 
 ---
