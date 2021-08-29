@@ -214,7 +214,7 @@ This is a very cursory overview of the tools I use the most in a Python project.
 	
 	3. You ***CAN*** use command line tools, but I do not. If you have to ask what a command line tool is, then command line tools are probably not well suited to your purposes. Instead, try [GitHub Desktop](https://desktop.github.com). 
 
-3. ***PyTest:*** PyTest is a testing tool that is integrated into the PyCharm environment. There are other testing tools that could be used with PyCharm, but PyTest is the one that I use. I call it out because the focus of the demo, [7. Demo: Test Driven Design (TDD)]() is based on PyTest. Note that most "pro" level development environments will have some sort of testing framework.
+3. ***PyTest:*** PyTest is a testing tool that is integrated into the PyCharm environment. There are other testing tools that could be used with PyCharm, but PyTest is the one that I use. I call it out because the focus of the demo, [7. Demo: Test Driven Design (TDD)](#7-demo-test-driven-design-tdd) is based on PyTest. Note that most "pro" level development environments will have some sort of testing framework.
 
 ---
 
