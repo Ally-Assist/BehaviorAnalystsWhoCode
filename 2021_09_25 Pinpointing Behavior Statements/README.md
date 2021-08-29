@@ -23,6 +23,8 @@ The focus of the presentation, or way or another, will be software development p
 
 The long term goal is to help foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective. Or something.
 
+***Formatting Note:*** I have included links throughout this page to more in depth information. So much information, so little time.
+
 ### Rationale
 
 David and I discussed options. The basic drivers in developing the presentation will be:
@@ -214,7 +216,7 @@ This is a very cursory overview of the tools I use the most in a Python project.
 	
 	3. You ***CAN*** use command line tools, but I do not. If you have to ask what a command line tool is, then command line tools are probably not well suited to your purposes. Instead, try [GitHub Desktop](https://desktop.github.com). 
 
-3. ***PyTest:*** PyTest is a testing tool that is integrated into the PyCharm environment. There are other testing tools that could be used with PyCharm, but PyTest is the one that I use. I call it out because the focus of the demo, [7. Demo: Test Driven Design (TDD)](#7-demo-test-driven-design-tdd) is based on PyTest. Note that most "pro" level development environments will have some sort of testing framework.
+3. ***[PyTest](https://docs.pytest.org/):*** PyTest is a testing framework that is integrated into the PyCharm environment. There are other testing tools that could be used with PyCharm, but PyTest is the one that I use. I call it out because the focus of the demo, ""[7. Demo: Test Driven Design (TDD)](#7-demo-test-driven-design-tdd)"", is based on PyTest. Note that most "pro" level development environments will have [some sort of testing framework](https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks).
 
 ---
 
