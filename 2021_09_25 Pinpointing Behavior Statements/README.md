@@ -93,7 +93,7 @@ A few relevant articles:
 
 2. [How to Pinpoint Behavior Effectively](https://centralreach.com/how-to-pinpoint-behavior-effectively/): More inclusive than our current project. We will focus on the "Movement Cycle" (action verb and object).
 
-3. [Seleting a Pinpoint](https://centralreach.com/how-to-pinpoint-behavior-effectively/).
+3. [Vital Behaviors](https://sourcesofinsight.com/vital-behaviors/.
 
 
 ---
@@ -103,21 +103,21 @@ A few relevant articles:
 ***How to break it down into digestible chunks?***
 
 
-### A Possible End Goal
+### 2.1 A Possible End Goal
 
 A system that can be used by large numbers of users evaluating large numbers of statements, marking them as to their behavioral/non-behavioral characteristics. Statistics automatically collected to decide which statements are behavioral in what ways; which statements might be modified to be behavioral, and in what ways. Inter-observer agreements by statement and characteristic. Graphs of various types to analyze quality of classifications, training needs, etc.
 
 System would, itself learn to make such classifications and corrections, with feedback from well trained humans.
 
-### A Practical Starting Point
+### 2.2 A Practical Starting Point
 
 A simple prototype, single-user, desktop app. Present statements and classification criteria, and collects user responses per statement. Goal: development of overall interaction style.
 
-### A Practical Enhancement
+### 2.3 A Practical Enhancement
 
 Add user login and record/track responses to each stimuli per user in a local database. Simple graphs and tables showing results.
 
-### Next?
+### 2.4 Next?
 
 
 ---
