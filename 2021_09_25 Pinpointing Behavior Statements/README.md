@@ -254,6 +254,32 @@ This is a very cursory overview of the tools I use the most in a Python project.
 
 ***How will I use the tools to create "provably correct" software?***
 
+Most of the code will already exist as a Python in the [project repository](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements).
+
+## Main Demo
+
+I will leave at least one critical model component, and one view-controller component, unfinished. I will have a set of behavioral requirements for that component that the component must satisfy. As part of demonstrating test driven design, I will incrementally complete the components using the Pytest [unit testing framework](https://en.wikipedia.org/wiki/Unit_testing).
+
+1. At each increment, 
+
+	1. I will set a goal specifying a sub-requirement for the component in the form of a [Python assertion in a test under Pytest](https://docs.pytest.org/en/6.2.x/assert.html). 
+
+	2. The assertion will fail until I produce the code that satisfies that goal.
+
+	3. I will set another goal (i.e., assertion), then engage in software development behaviors that will be reinforced by passing the criterial specified as an assertion.
+
+	4. Rinse repeat until all behavioral application requirements for the component are satisfied.
+	
+2. The full test suite for the project will be run to find any other problems I introduced during implementation of the component. Any errors must be fixed before we can say that the component is complete.
+
+3. Once the project is error free, the test coverage analyzer will be run.
+
+## Optional
+
+Assuming Ryan Cole is present, Ryan and I may demonstrate "[paired programming](https://martinfowler.com/articles/on-pair-programming.html)", which might better be thought of as cooperative problem solving.
+
+If Ryan is not available, might this be time for "audience participation"?
+
 
 ---
 
