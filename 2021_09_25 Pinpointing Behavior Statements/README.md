@@ -185,9 +185,9 @@ That is, the data model is structural; the overall model is functional.
 
 ### View-Controller: The User Interface
 
-In our case, the "view-controller" components of the MVC pattern will be combined into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). This intermixing is pretty standard, unless you are the person developing the individual "views" and "controllers" (and sometimes even then).
+In our case, the "view-controller" components of the MVC pattern will be combined into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). This intermixing is pretty standard, unless you are the person who is developing the individual "views" and "controllers" (and sometimes even then).
 
-***The*** user interface is difficult to specify. Models typically are presented to different audiences via different "end-user" interfaces. Foe example:
+***"The"*** user interface is difficult to specify. Models typically are presented to different audiences via different "end-user" interfaces. Foe example:
 
 1. A [command line (CLI)](https://en.wikipedia.org/wiki/Command-line_interface).
 
