@@ -17,13 +17,15 @@ Created: Sunday 22 August 2021
 
 # Overview
 
-During a lengthy [discussion with the Slack channel owner, David Cox](https://behavioranaly-yw87919.slack.com/archives/D02APN949UL), I agreed to do one presentation to the Behavior Analysts Who Code Slack channel on Sunday 25 September 2021 @ 12:00 eastern USA time.
+During a lengthy [discussion with the Slack channel owner, David Cox](https://behavioranaly-yw87919.slack.com/archives/D02APN949UL), I agreed to do one presentation to the Behavior Analysts Who Code (BAWC) Slack channel on Sunday 25 September 2021 @ 12:00 eastern USA time.
 
-The focus of the presentation, or way or another, will be software development practices wrapped up in a behavior analytic scenario.
+What the presentation will be is evolving. Will it be a simple presentation (unlikely)? A live programming demo (probable)? A workshop (probably not this time)?  In any case, the focus of the presentation/demo/workshop will be software development practices wrapped up in a behavior analytic scenario.
 
 The long term goal is to help foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective. Or something.
 
-***Formatting Note:*** I have included links throughout this page to more in depth information. So much information, so little time.
+If participants are interested, the project may be included in future Saturday workshops outside the usual BAWC meetup schedule. Again, the purpose is to promote software development skills within the behavior analytic community. Such "workshops" would include online participation by attendees, including taking part in writing and debugging code (see "[pair programming](https://en.wikipedia.org/wiki/Pair_programming)").
+
+***Formatting Note:*** As above, I have included links throughout this page to more in depth information. So much information, so little time.
 
 ### Rationale
 
@@ -35,9 +37,9 @@ David and I discussed options. The basic drivers in developing the presentation 
 	
 	2. Computer science background.
 	
-	3. Any professional (or retired) software developers? I may be the only one.
+	3. Professional (or retired) software developers? I may be the only one.
 
-2. Given the audience experience with software development, or the lack of it, this first presentation needs to be very general.
+2. Given the audience experience with software development, or the lack of it, this first presentation needs to be very general, and perhaps skimpy on details.
 
 3. The "software development project" must be in some way relevant to behavior analysis. 
 
@@ -48,11 +50,11 @@ David and I discussed options. The basic drivers in developing the presentation 
 
 ### General Format
 
-Each of these topics will be addressed briefly. Links are included for more in-depth info.
+Each of the following topics will be addressed briefly. Links are included for more in-depth info.
 
 Duration of the presentation: potentially 90 minutes, with possibly 60 minutes for the demo and discussion, and 30 to glide over this written material.
 
-1. Behavior analytic scenario as the motivation for the project.
+1. ***Scenario:*** Behavior analytic scenario as the motivation for the project.
 
 2. Overall (basic) development strategy.
 
