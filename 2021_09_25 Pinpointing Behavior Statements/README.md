@@ -60,7 +60,7 @@ Duration of the presentation: potentially 90 minutes, with possibly 60 minutes f
 
 3. ***[Basic Requirements of Prototype](#3-basic-requirements-of-prototype):*** What will the first prototype phase do?
 
-4. Major software components to satisfy the requirements
+4. ***[Major Software Components](#4-major-software-components):*** The logical units of software which implement specific behaviors. Taken as a whole, an application (or model) can be viewed as an emergent arising from all of the components interacting.
 
 5. Tools that will be used (including download links) in the initial "simple prototype" phase.
 
