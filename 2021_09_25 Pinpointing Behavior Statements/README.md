@@ -50,9 +50,9 @@ David and I discussed options. The basic drivers in developing the presentation 
 
 ### General Format
 
-Each of the following topics will be addressed briefly. Links are included for more in-depth info.
+Duration of the presentation: At David's suggestion, I considered going for up to 90 minutes. Sounded good at the time, but realistically I simply cannot do it. So: max of 60 minutes, and I will try to spend most of that time on the live-programming-demo.
 
-Duration of the presentation: potentially 90 minutes, with possibly 60 minutes for the demo and discussion, and 30 to glide over this written material.
+Therefore, I will cover the following topics superficially to provide a context for the demo. The text here includes numerous links to more in depth information for those who want it.
 
 1. ***[Scenario](#1-scenario):*** Behavior analytic scenario as the motivation for the project.
 
