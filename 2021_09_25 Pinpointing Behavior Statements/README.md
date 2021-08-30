@@ -185,15 +185,15 @@ That is, the data model is structural; the overall model is functional.
 
 ### View-Controller: The User Interface
 
-In our case, the "view-controller" components of the MVC pattern will be combined into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). This intermixing is pretty standard, unless you are developing the individual "views" and "controllers" (and sometimes even then).
+In our case, the "view-controller" components of the MVC pattern will be combined into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). This intermixing is pretty standard, unless you are the person developing the individual "views" and "controllers" (and sometimes even then).
 
-Note that the user interface could take different forms, such as:
+***The*** user interface is difficult to specify. Models typically are presented to different audiences via different "end-user" interfaces. Foe example:
 
-1. a [command line (CLI)](https://en.wikipedia.org/wiki/Command-line_interface), 
+1. A [command line (CLI)](https://en.wikipedia.org/wiki/Command-line_interface).
 
-2. an [application programming interface (API)](https://en.wikipedia.org/wiki/API), or 
+2. An [application programming interface (API)](https://en.wikipedia.org/wiki/API).
 
-3. multiple [graphical user interfaces (GUIs)](https://en.wikipedia.org/wiki/Graphical_user_interface) on a variety of platforms (e.g., iOS, macOS, tvOS, watchOS, MS Windows, Xamarin, browser interfaces). All of these interfaces could be implemented against the same model.
+3. Multiple [graphical user interfaces (GUIs)](https://en.wikipedia.org/wiki/Graphical_user_interface) on a variety of platforms (e.g., iOS, macOS, tvOS, watchOS, MS Windows, Xamarin, browser interfaces). All of these interfaces could be implemented against the same model.
 
 ## 4.2 Model Components
 
