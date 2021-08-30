@@ -54,7 +54,7 @@ Duration of the presentation: At David's suggestion, I considered going for up t
 
 Therefore, I will cover the following topics superficially to provide a context for the demo. The text here includes numerous links to more in-depth information for those who want it.
 
-For those ***really really*** interested, it would be useful to at least skim over the linked material before the presentation.
+For those who are ***really really*** interested, it would be useful to at least skim over the linked material before the presentation.
 
 1. ***[Scenario](#1-scenario):*** Behavior analytic scenario as the motivation for the project.
 
@@ -91,7 +91,7 @@ The general criteria. To be a behavior, for our purposes:
 
 2. Objective: Must be confirmable by others.
 
-3. Active: Only a living organism can do it (see also: Dead Man Test)
+3. Active: Only a living organism can do it (see also: [Dead Man Test](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6269387/pdf/40617_2018_Article_239.pdf))
 
 4. Neutral: Non-biased, non-judgmental, non-emotional.
 
