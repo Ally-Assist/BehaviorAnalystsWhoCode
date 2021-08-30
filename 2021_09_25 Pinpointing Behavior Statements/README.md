@@ -54,11 +54,11 @@ Each of the following topics will be addressed briefly. Links are included for m
 
 Duration of the presentation: potentially 90 minutes, with possibly 60 minutes for the demo and discussion, and 30 to glide over this written material.
 
-1. ***Scenario:*** Behavior analytic scenario as the motivation for the project.
+1. ***[Scenario](#1-scenario):*** Behavior analytic scenario as the motivation for the project.
 
-2. Overall (basic) development strategy.
+2. ***[Development Strategy](#2-development-strategy):*** Overall (basic) development strategy in terms of incremental phases shaping the functionality of the code toward the overall goal.
 
-3. Basic requirements for the first prototype.
+3. ***[Basic Requirements of Prototype](#3-basic-requirements-of-prototype):*** What will the first prototype phase do?
 
 4. Major software components to satisfy the requirements
 
@@ -145,9 +145,11 @@ This will be an exceedingly simple initial version:
 
 ---
 
-# 4. Major Components (i.e., Objects) in the Software
+# 4. Major Software Components
 
 ***What code will I develop?***
+
+Software components may go by many names. We will focus on objects, as in [Object-Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming).
 
 ## 4.1 Design Pattern: MVC
 
