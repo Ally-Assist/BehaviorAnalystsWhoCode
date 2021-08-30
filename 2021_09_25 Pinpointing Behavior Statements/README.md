@@ -62,7 +62,7 @@ Therefore, I will cover the following topics superficially to provide a context 
 
 4. ***[Major Software Components](#4-major-software-components):*** The logical units of software which implement specific behaviors. Taken as a whole, an application (or model) can be viewed as an emergent arising from all of the components interacting.
 
-5. Tools that will be used (including download links) in the initial "simple prototype" phase.
+5. ***[Tools](#5-tools):*** Software that will be used in the initial "simple prototype" phase, plus some possible tools for future directions.
 
 6. Present the development process.
 
@@ -214,9 +214,9 @@ Note that the user interface could take different forms, such as:
 
 There is a very large number of choices among development tools. I will focus on the ones that I use, and which serve well in a "pro" environment. But the choice of tools is often dictated by an organization, and if not, then is a very personal and idiosyncratic choice.
 
-## Most Likely
+## Current Phase
 
-This is a very cursory overview of the tools I use the most in a Python project. If there is need/interest, we can cover them in more detail at a later date:
+This is a very cursory overview of the tools I will use in this current simple prototype. They are also the tools I use the most in any Python project. 
 
 1. ***[PyCharm](https://www.jetbrains.com/pycharm/):*** This is a full featured [integrated development environment (IDE)](https://en.wikipedia.org/wiki/Integrated_development_environment). It includes editors, project management (technical, not business admin), debuggers, and so on. 
 
@@ -228,7 +228,7 @@ This is a very cursory overview of the tools I use the most in a Python project.
 
 2. ***[GitHub](https://github.com/):*** GitHub is an online means of sharing *versioned* project materials. It is one of the many cloud versions of the popular [git source control system](https://git-scm.com). It has features to support parallel work on the code by different team members and even separate teams in a controlled, yet flexible manner.
 
-	1. This is where the materials for this presentation are stored: [Ally-Assist/For-BehaviorAnalystsWhoCode](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements). 
+	1. This is where the materials for this presentation are stored: [Ally-Assist/For-BehaviorAnalystsWhoCode](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements). If you are reading this online, you are probably already on the GitHub site.
 	
 	2. Note that this source code repository is a public, open source, space under the Performance Ally, LLC, account. All materials in this repository are licensed under the [Apache License version 2](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/blob/main/2021_09_25%20Pinpointing%20Behavior%20Statements/LICENSE).
 	
@@ -251,7 +251,7 @@ This is a very cursory overview of the tools I use the most in a Python project.
 
 ---
 
-# 6. Development Process
+# 6. A Development Process
 
 ***TO BE DONE***
 
