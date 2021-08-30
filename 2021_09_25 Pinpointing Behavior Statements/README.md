@@ -64,9 +64,9 @@ Therefore, I will cover the following topics superficially to provide a context 
 
 5. ***[Tools](#5-tools):*** Software that will be used in the initial "simple prototype" phase, plus some possible tools for future directions.
 
-6. Present the development process.
+6. ***[A Development Process](#6-a-development-process):*** A tentative set of steps in using the tools to meet the requirements specified for the application scenario. 
 
-7. Demo with live development project (will have basic framework in place, then do some coding to illustrate one important concept in more detail, e.g., test driven design)
+7. ***[Demo: Continuous-Feedback Development]():*** Demo with live development project (will have basic framework in place, then do some coding to illustrate one important concept in more detail, e.g., test driven design)
 
 8. Where to go from here? What might a next step be? Do it in another presentation?
 
@@ -260,15 +260,21 @@ This is a very cursory overview of the tools I will use in this current simple p
 
 ---
 
-# 7. Demo: Test Driven Design (TDD)
+# 7. Demo: Continuous-Feedback Development
 
 ***TO BE DONE***
 
 ***How will I use the tools to create "provably correct" software?***
 
-Most of the code will already exist as a Python in the [project repository](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements).
+I have yet to come up with a satisfactory name for this development technique that really captures its essence from a behavioral point of view.
+
+The traditional name (if such can be said of a term that was recently coined) is [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). It is a set of decades old practices bundled under a catchy new name, but more importantly, with support for it baked into most software development environments these days. For example, see Pytest in the Tools section of this doc.
+
+The basic idea is: when developing a unit of code, break the overall requirement(s) for the unit into "micro-goals" *(my term)*, and achieve those goals quickly and provably in code. Once the coding is done, keep the "test" for the unit as part of a suite of tests to confirm that functioning of the entire system whenever there is a change or a problem.
 
 ## Main Demo
+
+Most of the code will already exist as a Python in the [project repository](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements).
 
 I will leave at least one critical model component, and one view-controller component, unfinished. I will have a set of behavioral requirements for that component that the component must satisfy. As part of demonstrating test driven design, I will incrementally complete the components using the Pytest [unit testing framework](https://en.wikipedia.org/wiki/Unit_testing).
 
