@@ -195,17 +195,35 @@ In our case, the "view-controller" components of the MVC pattern will be combine
 
 3. Multiple [graphical user interfaces (GUIs)](https://en.wikipedia.org/wiki/Graphical_user_interface) on a variety of platforms (e.g., iOS, macOS, tvOS, watchOS, MS Windows, Xamarin, browser interfaces). All of these interfaces could be implemented against the same model.
 
-## 4.2 Model Components
+## 4.2 Overall View
+
+***Main driver***
+
+An application class with a `main()` that can be invoked from the command line (given the appropriate `setup.py`).
+
+Its primary purpose is to instantiate the model and view components, and to run the "main event loop".
+
+It will also own and control a top level view-controller for starting, pausing, and stopping the application.
+
+## 4.3 Model Components
 
 ***TO BE DONE***
 
 *statements, responses, ...*
 
-## 4.3 View-Controller Components
+The model will initially consist of these major classes:
+
+1. a list of statements with a [universally unique identifier (UUID)](https://en.wikipedia.org/wiki/Universally_unique_identifier) for each statement;
+
+2. classification responses identified by type, value, and time at which a response occurred; and
+
+3. a list (of lists) structure to capture classification responses for each statement by UUID.
+
+## 4.4 View-Controller Components
 
 ***TO BE DONE***
 
-*window containing view of current statement, possible categorization choices, controls to make responses and traverse statements; data displays*
+***Window containing view of current statement, possible categorization choices, controls to make responses and traverse statements; data displays***
 
 
 ---
