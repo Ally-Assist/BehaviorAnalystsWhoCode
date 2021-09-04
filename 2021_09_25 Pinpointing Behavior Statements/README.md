@@ -199,6 +199,8 @@ In our case, the "view-controller" components of the MVC pattern will be combine
 
 ***Main driver***
 
+![Overall schematic of the application](./Documentation/TBD%20Diagram.png "Overall schematic of the application").
+
 An application class with a `main()` that can be invoked from the command line (given the appropriate `setup.py`).
 
 Its primary purpose is to instantiate the model and view components, and to run the "main event loop".
@@ -206,8 +208,6 @@ Its primary purpose is to instantiate the model and view components, and to run 
 It will also own and control a top level view-controller for starting, pausing, and stopping the application.
 
 ## 4.3 Model Components
-
-***TO BE DONE***
 
 *statements, responses, ...*
 
@@ -218,6 +218,8 @@ The model will initially consist of these major classes:
 2. classification responses identified by type, value, and time at which a response occurred; and
 
 3. a list (of lists) structure to capture classification responses for each statement by UUID.
+
+
 
 ## 4.4 View-Controller Components
 
