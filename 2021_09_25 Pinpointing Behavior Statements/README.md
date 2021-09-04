@@ -17,19 +17,25 @@ Created: Sunday 22 August 2021
 
 # Overview
 
-During a lengthy [discussion with the Slack channel owner, David Cox](https://behavioranaly-yw87919.slack.com/archives/D02APN949UL), I agreed to do one presentation to the Behavior Analysts Who Code (BAWC) Slack channel on Sunday 25 September 2021 @ 12:00 eastern USA time.
+I will provide a quick overview of some basic software development concepts, tools, and processes. Much of the presentation will be very shallow, but links are provided throughout to more in-depth information.
 
-What the presentation will be is evolving. Will it be a simple presentation (unlikely)? A live programming demo (probable)? A workshop (probably not this time)?  In any case, the focus of the presentation/demo/workshop will be software development practices wrapped up in a behavior analytic scenario.
+The focus will be one particularly important part of development that involves test as part of coding, rather than something that is done after coding. It is generally called [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). If it had been named by a behavior analyst rather than a software developer, the name might be something like 'Continuous Feedback Driven Development', or 'Micro-Goal Driven Development'. Something that focuses on the fact that each little test sets some goal criteria for the code to meet.
 
-The long term goal is to help foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective. Or something.
+Test Driven Development:
+
+1. will make coding easier, 
+
+2. allow you to "prove" that you code works, and 
+
+3. the tests that you create during development remain as a test suite that can help find issues at any time (especially after coding seemingly unrelated areas).
+
+The long term goal is to help foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective.
 
 If participants are interested, the project may be included in future Saturday workshops outside the usual BAWC meetup schedule. Again, the purpose is to promote software development skills within the behavior analytic community. Such "workshops" would include online participation by attendees, including taking part in writing and debugging code (see "[pair programming](https://en.wikipedia.org/wiki/Pair_programming)").
 
-***Formatting Note:*** As above, I have included links throughout this page to more in depth information. So much information, so little time.
-
 ### Rationale
 
-David and I discussed options. The basic drivers in developing the presentation will be:
+The basic drivers in developing the presentation will be:
 
 1. Software development skills of the audience are all over the place.
 
@@ -50,9 +56,9 @@ David and I discussed options. The basic drivers in developing the presentation 
 
 ### General Format
 
-Duration of the presentation: At David's suggestion, I considered going for up to 90 minutes. Sounded good at the time, but realistically I simply cannot do it. So: max of 60 minutes, and I will try to spend most of that time on the live-programming-demo.
+Duration of the presentation: 60 minutes, max. At least half of that will be live demo and questions/discussion. Of course, if there are no question, the presentation will be shorter.
 
-Therefore, I will cover the following topics superficially to provide a context for the demo. The text here includes numerous links to more in-depth information for those who want it.
+I will cover the following topics superficially to provide a context for the demo. The text here includes numerous links to more in-depth information for those who want it.
 
 For those who are ***really really*** interested, it would be useful to at least skim over the linked material before the presentation.
 
@@ -113,15 +119,23 @@ A few relevant articles:
 
 ### 2.1 A Possible End Goal
 
-A system that can be used by large numbers of users evaluating large numbers of statements, marking them as to their behavioral/non-behavioral characteristics. Statistics automatically collected to decide which statements are behavioral in what ways; which statements might be modified to be behavioral, and in what ways. Inter-observer agreements by statement and characteristic. Graphs of various types to analyze quality of classifications, training needs, etc.
+If we were to follow through on development of this code to a full blown online system, what would the target be?
+
+How about a system that can be used by large numbers of users evaluating large numbers of statements, marking them as to their behavioral/non-behavioral characteristics. Statistics automatically collected to decide which statements are behavioral in what ways; which statements might be modified to be behavioral, and in what ways. Inter-observer agreements by statement and characteristic. Graphs of various types to analyze quality of classifications, training needs, etc.
 
 System would, itself learn to make such classifications and corrections, with feedback from well trained humans.
 
+But that is a possible end goal. Not a starting point.
+
 ### 2.2 A Practical Starting Point
 
-A simple prototype, single-user, desktop app. Present statements and classification criteria, and collects user responses per statement. Goal: development of overall interaction style.
+It is best to start small, and focus on the core logic. We will focus on the main "engine" of the application, that is, the model. See [Major Software Components](#4-major-software-components), below.
+
+This means that there will be no user interface to start with. Part of the reason is the amount of time it would require to prepare such an interface. It should be a separate "sprint".
 
 ### 2.3 A Practical Enhancement
+
+Add a GUI to present statements and classification criteria, and collects user responses per statement.
 
 Add user login and record/track responses to each stimuli per user in a local database. Simple graphs and tables showing results.
 
@@ -136,13 +150,17 @@ Add user login and record/track responses to each stimuli per user in a local da
 
 This will be an exceedingly simple initial version:
 
-1. A set of predefined statements as test data.
+1. A set of predefined statements provided as a `fixture` for testing.
 
-2. A GUI to present statements, and collect categorization responses.
+2. The model classes to supply statements in random order without replacement.
 
-3. Simple data collection to record responses per statement.
+3. Unit tests for the model classes to guide development and provide rapid feedback.
 
-4. Simple table and/or graph to summarize results.
+4. Model classes to collect test responses.
+
+5. Again, unit tests to guide development of test response collection and to provide rapid feedback.
+
+6. Simple model object to collect results statistics, plus its attendant unit tests.
 
 
 ---
@@ -205,6 +223,12 @@ In our case, the "view-controller" components of the MVC pattern will be combine
 		"""
 		The textual data of a statement that has been, or will be, rated as to how
 		behavioral it is.
+		
+		For more information on UUID: 
+		https://en.wikipedia.org/wiki/Universally_unique_identifier
+		
+		For code, see:
+		https://docs.sqlalchemy.org/en/14/core/custom_types.html#backend-agnostic-guid-type
 		"""
 		id: UUID	# Identifier for storing/retrieving statement & associated ratings.
 		text: AnyStr # The text of the statement
@@ -238,7 +262,12 @@ In our case, the "view-controller" components of the MVC pattern will be combine
 		Provides access to statements by Statement.id, and by random selection without
 		replacement.
 		"""
-	
+		
+	# TODO: Refactor response collection. Can simplify by encapsulating all responses 
+	#	for one statement into an object, then put that object into a response collection
+	# 	for all statements. This allows automation of the begin/end handling for response
+	# 	sequences for each statement, plus facilitates exception checking.
+	#
 	class ResponseCollection:
 		"""
 		Collection of user classification responses to statements.
@@ -274,7 +303,9 @@ The model will initially consist of these major classes:
 
 ***Window containing view of current statement, possible categorization choices, controls to make responses and traverse statements; data displays***
 
-![Controls to respond to statements, and views to see them and the responses. ](./Documentation/TBD%20Diagram.png "Controls to respond to statements, and views to see them and the responses.").
+**NO. Will not do a GUI for this demo. Too much work. Too little time.***
+
+Maybe a next phase?
 
 
 ---
