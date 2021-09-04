@@ -219,6 +219,10 @@ In our case, the "view-controller" components of the MVC pattern will be combine
 
 ![Model: the organism living in the application](./Documentation/TBD%20Diagram.png "Model: the organism living in the application").
 
+Note that all identifiers for data objects are [Universally Unique Identifiers (UUIDs)](https://en.wikipedia.org/wiki/Universally_unique_identifier). In Microsoft world, the same objects are known as Globally Unique Identifiers (GUIDs). 
+
+We are not using a database in this phase we will define them as [random hex strings](https://docs.python.org/3/library/secrets.html#module-secrets).
+
 	class Statement:
 		"""
 		The textual data of a statement that has been, or will be, rated as to how
