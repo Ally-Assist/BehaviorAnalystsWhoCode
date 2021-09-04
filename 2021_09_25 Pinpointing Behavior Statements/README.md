@@ -1,4 +1,4 @@
-# 2021_09_25 Pinpointing: Is It A Behavior?
+# App: Behavioral Statement Classifier
 
 Subtitle: **A Quick Overview of Professional-Style Software Development in Python**
 
@@ -195,23 +195,70 @@ In our case, the "view-controller" components of the MVC pattern will be combine
 
 3. Multiple [graphical user interfaces (GUIs)](https://en.wikipedia.org/wiki/Graphical_user_interface) on a variety of platforms (e.g., iOS, macOS, tvOS, watchOS, MS Windows, Xamarin, browser interfaces). All of these interfaces could be implemented against the same model.
 
-## 4.2 Overall View
-
-***Main driver***
-
-![Overall schematic of the application](./Documentation/TBD%20Diagram.png "Overall schematic of the application").
-
-An application class with a `main()` that can be invoked from the command line (given the appropriate `setup.py`).
-
-Its primary purpose is to instantiate the model and view components, and to run the "main event loop".
-
-It will also own and control a top level view-controller for starting, pausing, and stopping the application.
-
-## 4.3 Model Components
+## 4.2 Model Components
 
 ***Statements, responses, ...***
 
 ![Model: the organism living in the application](./Documentation/TBD%20Diagram.png "Model: the organism living in the application").
+
+	class Statement:
+		"""
+		The textual data of a statement that has been, or will be, rated as to how
+		behavioral it is.
+		"""
+		id: UUID	# Identifier for storing/retrieving statement & associated ratings.
+		text: AnyStr # The text of the statement
+	
+	enum ResponseType:
+		"""
+		Indicates the type of response being recorded.
+		"""
+		BeginResponses,	# Pseudo-response: records when statement was first presented.
+		EndResponses,	# Pseudo-response: end of response sequence for a statement.
+		
+		Measureable,	# User response: statement of something that is measureable.
+		Objective,	# User response: statement of something that is objective.
+		Active,		# User response: statement is something a "dead man" cannot do.
+		Neutral		# User response: statement is factual, not emotional, unbiased.
+	
+	class Response:
+		"""
+		One user response to one statement.
+		"""
+		id: UUID			# Identifier of the user response.
+		statementId: UUID	# Identifier of the statement to which the user responded.
+		timestamp: float		# The time at which the response occurred (sec since epoch)
+		responseType: ResponseType # Kind of response
+		
+	class StatementCollection:
+		"""
+		The collection of textual statements. The class supports building the collection
+		of statements, but not removing statements.
+		
+		Provides access to statements by Statement.id, and by random selection without
+		replacement.
+		"""
+	
+	class ResponseCollection:
+		"""
+		Collection of user classification responses to statements.
+		
+		Responses are sequential by timestamp. Note that there may be any number of
+		responses recorded for a statement, even though there are only six types of
+		responses. This permits tracking of changed responses.
+		
+		Responses must be added to the collection starting with a Presented response
+		type. The BeginResponses response type indicates that we are beginning to collect
+		reponses for one particular statement. More importantly, it is the basis of
+		response latency. User responses are then added for that statement, and no 
+		other until after the EndResponses event is recorded for a statement. The 
+		EndResponses provides a definitive termination of responses for a statement. To
+		resume collecting responses for a statement after recording an EndResponses,
+		a BeginResponses must be first recorded.
+		"""
+		
+	
+	
 
 The model will initially consist of these major classes:
 
