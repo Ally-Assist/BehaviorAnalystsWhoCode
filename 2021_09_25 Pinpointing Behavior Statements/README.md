@@ -209,7 +209,9 @@ It will also own and control a top level view-controller for starting, pausing, 
 
 ## 4.3 Model Components
 
-*statements, responses, ...*
+***Statements, responses, ...***
+
+![Model: the organism living in the application](./Documentation/TBD%20Diagram.png "Model: the organism living in the application").
 
 The model will initially consist of these major classes:
 
@@ -223,9 +225,9 @@ The model will initially consist of these major classes:
 
 ## 4.4 View-Controller Components
 
-***TO BE DONE***
-
 ***Window containing view of current statement, possible categorization choices, controls to make responses and traverse statements; data displays***
+
+![Controls to respond to statements, and views to see them and the responses. ](./Documentation/TBD%20Diagram.png "Controls to respond to statements, and views to see them and the responses.").
 
 
 ---
