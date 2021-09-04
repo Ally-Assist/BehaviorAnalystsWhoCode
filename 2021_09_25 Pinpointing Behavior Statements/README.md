@@ -227,12 +227,6 @@ We are not using a database in this phase we will define them as [random hex str
 		"""
 		The textual data of a statement that has been, or will be, rated as to how
 		behavioral it is.
-		
-		For more information on UUID: 
-		https://en.wikipedia.org/wiki/Universally_unique_identifier
-		
-		For code, see:
-		https://docs.sqlalchemy.org/en/14/core/custom_types.html#backend-agnostic-guid-type
 		"""
 		id: UUID	# Identifier for storing/retrieving statement & associated ratings.
 		text: AnyStr # The text of the statement
