@@ -85,13 +85,17 @@ For those who are ***really really*** interested, it would be useful to at least
 
 ***What is the behavior analytic purpose?***
 
-Collecting and evaluating statements of behavior as part of identifying behaviors important in producing some result, otherwise known as, "pinpointing vital behaviors".
+Collecting and evaluating statements of behavior as part of identifying behaviors important in producing some result, otherwise known as, "pinpointing vital behaviors". Such statements would be specific to particular domains and perhaps settings within those domains.
 
-### General Need
+Thus, the issue/setting being addressed by the statements would have to be identified.
+
+Besides the general need of classifying behaviors, we also want to collect data that will support efforts to improve the entire process: train users to classify statements; the criteria used in classifying statements; the explanations of the criteria; how the user interacts with the system; and so on.
+
+### 1.1 General Need
 
 Would like software that would facilitate the process of training people to do the classification, and to collect classifications of large volumes of behavior statements.
 
-The general criteria. To be a behavior, for our purposes:
+The general criteria. For a statement to describe a behavior, for our purposes, the statement must meet these criteria:
 
 1. Measurable: Must be observable by others than the performer: seen, heard, felt, smelled, tasted.
 
@@ -109,6 +113,28 @@ A few relevant articles:
 
 3. [Vital Behaviors](https://sourcesofinsight.com/vital-behaviors/)
 
+### 1.2 Main Data Collection Need
+
+There are two main use cases relating to data collection:
+
+1. Classifying statements.
+
+2. Training users to classify statements.
+
+It is a classic "chicken and egg" problem: to train users to classify, we need a training set of statements that are already classified so that we may provide feedback to learners, but to get a training set of statements we need people who are already proficient and agree with one another.
+
+We will start with the most basic requirement: collecting classification ratings by user. One possible procedure would be to have a group of users do classifications until there is a high inter-rater agreement on a large percentage of the statements, say, 95% agreement on ratings of statements. Should probably also have some fluency requirement, or at least require some steady state for latencies, inter-response times, overall rates.
+
+### 1.3 Final Product
+
+Online system which can be used by large numbers of users to classify statements within different domains.
+
+Some users (domain admins?) would be able to feed streams of statements into the system, along with descriptions of what issue(s) the statements are addressing.
+
+Users would get feedback on their "correctness" and fluency scores (when?). System would be used to train and maintain rating behaviors. Work product would be domain specific sets of statements classified as to how behavioral they are, and in what ways the "non-behavioral" statements differ from what is desired.
+
+Graphs, tables, lists, of data.
+
 
 ---
 
@@ -116,52 +142,15 @@ A few relevant articles:
 
 ***How to break it down into digestible chunks?***
 
+The main problem in developing such an application is, as always, resources: to more completely define the problem, design the system, implement it, and deploy it.
 
-### 2.1 A Possible End Goal
+In this demo resources are far more constrained than in most.
 
-If we were to follow through on development of this code to a full blown online system, what would the target be?
+Thus, we will break the development down into excruciatingly small chunks.
 
-How about a system that can be used by large numbers of users evaluating large numbers of statements, marking them as to their behavioral/non-behavioral characteristics. Statistics automatically collected to decide which statements are behavioral in what ways; which statements might be modified to be behavioral, and in what ways. Inter-observer agreements by statement and characteristic. Graphs of various types to analyze quality of classifications, training needs, etc.
+If the project garners interest among the Behavior Analysts Who Code community, then there may be further phases. Ideally, members of the community would volunteer to help with coding, test data, data collection, and analysis.
 
-System would, itself learn to make such classifications and corrections, with feedback from well trained humans.
-
-But that is a possible end goal. Not a starting point.
-
-### 2.2 A Practical Starting Point
-
-It is best to start small, and focus on the core logic. We will focus on the main "engine" of the application, that is, the model. See [Major Software Components](#4-major-software-components), below.
-
-This means that there will be no user interface to start with. Part of the reason is the amount of time it would require to prepare such an interface. It should be a separate "sprint".
-
-### 2.3 A Practical Enhancement
-
-Add a GUI to present statements and classification criteria, and collects user responses per statement.
-
-Add user login and record/track responses to each stimuli per user in a local database. Simple graphs and tables showing results.
-
-### 2.4 Next?
-
-
----
-
-# 3. Basic Requirements of Prototype
-
-***How will I know when I am done?***
-
-This will be an exceedingly simple initial version:
-
-1. A set of predefined statements provided as a `fixture` for testing.
-
-2. The model classes to supply statements in random order without replacement.
-
-3. Unit tests for the model classes to guide development and provide rapid feedback.
-
-4. Model classes to collect test responses.
-
-5. Again, unit tests to guide development of test response collection and to provide rapid feedback.
-
-6. Simple model object to collect results statistics, plus its attendant unit tests.
-
+Okay, so this is a toy application. May not be useful to anyone. But, it might be a good framework for learning about building an application as a team scattered across the galaxy. Or at least the planet.
 
 ---
 
