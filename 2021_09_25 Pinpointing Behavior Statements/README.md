@@ -148,7 +148,7 @@ Thus, I will break the development down into excruciatingly small chunks.
 
 1. First, develop a basic "model" (see below).
 
-2. Second: add a basic desktop GUI for interaction.
+2. Second: add a basic desktop GUI ("view controllers") for interaction.
 
 3. Third: add basic graphs and table displays for simple data analysis.
 
@@ -168,17 +168,27 @@ Software components may go by many names. We will focus on objects, as in [Objec
 
 The following [software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern) will guide the overall structure of the application. While most [end users](https://en.wikipedia.org/wiki/End_user) picture an application as a [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface), the reality is generally quite different.
 
+Which raises the issue of breaking software up into manageable units with well defined responsibilities. This process goes by many names, including:
+
+1. [Decomposition](https://en.wikipedia.org/wiki/Decomposition_(computer_science))
+
+2. Factoring: This is the more commonly used synonym of decomposition.
+
+3. [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring). See: [rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)).
+
 ## 4.1 Design Pattern: MVC
 
-The most common, and most basic, application software design pattern over the past few decades is known as [Model-view-controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller).  It goes hand-in-hand with [object oriented programming](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f), and seems to originate with the development of the Smalltalk language in the late 1960s.
+The most common, and most basic, application software design pattern over the past few decades is known as [model-view-controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller).  It goes hand-in-hand with [object oriented programming](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f), and seems to originate with the development of the [Smalltalk language](https://en.wikipedia.org/wiki/Smalltalk) in the late 1960s.
 
 ### Model: The behaving organism
 
 The model is the "M" in "MVC".
 
+It is the living breathing heart of the application.
+
 The model is the core engine of an application. This is where the main logic and data are encapsulated, and where the core behavior of the application is defined. The model defines the full set of possible interactions with, or actions on, the data. It is generally embodied as a code module (a.k.a., a library, a package). 
 
-Thus, the primary user user for a model is generally a programmer, and the interface is an [application programming interface (API)](https://en.wikipedia.org/wiki/API). The end user interface is built upon the model, perhaps through other intervening layers of software.
+The primary user user for a model is generally a programmer, and the interface is an [application programming interface (API)](https://en.wikipedia.org/wiki/API). The end user interface is built upon the model, perhaps through other intervening layers of software.
 
 ##### Functional model: as simulation
 
@@ -198,7 +208,7 @@ The model defines:
 
 Besides behavior, the model includes data, which is the internal state of the organism, its "guts". These guts are part of the functional model, but are frequently externalized as a storage format, such as a [relational database entity-relationship model](https://en.wikipedia.org/wiki/Entity–relationship_model).
 
-The data model only defines a bare outline of the data items in the model, and to some extent, how the data items are related. It does not, and cannot, define behavior. Just be aware that the ***data*** *model* is not ***the*** *model*; it does not include behavior.
+The data model only defines a bare outline of the data items in the model, and to some extent, how the data items are related. It does not, and cannot, define behavior. Just be aware that the ***data*** model is not ***the*** model; it does not include behavior.
 
 That is, the data model is structural; the overall model is functional.
 
@@ -206,7 +216,7 @@ That is, the data model is structural; the overall model is functional.
 
 In our case, the "view-controller" components of the MVC pattern will be combined into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). This intermixing is pretty standard, unless you are the person who is developing the individual "views" and "controllers" (and sometimes even then).
 
-***"The"*** user interface is difficult to specify. Models typically are presented to different audiences via different "end-user" interfaces. Foe example:
+***"The"*** user interface is difficult to specify. Models typically are presented to different audiences via different end user interfaces. Foe example:
 
 1. A [command line (CLI)](https://en.wikipedia.org/wiki/Command-line_interface).
 
