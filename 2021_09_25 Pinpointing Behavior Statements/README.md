@@ -164,7 +164,7 @@ Thus, I will break the development down into excruciatingly small chunks.
 
 If the project garners interest among the Behavior Analysts Who Code community, then we may continue it in later sessions. Ideally, members of the community would volunteer to help with coding, test data, data collection, and analysis.
 
-Okay, so this may only ever be a toy application. It may not be useful to anyone. But, it also might be a good framework for learning about building an application as a team scattered across the galaxy. Or at least the planet.
+This may only ever be a toy application. It may not be useful to anyone. But, it also might be a good framework for learning about building an application as a team scattered across the galaxy. Or at least the planet.
 
 ---
 
@@ -182,7 +182,7 @@ Which raises the issue of breaking software up into manageable units with well d
 
 2. Factoring: This is the more commonly used synonym of decomposition.
 
-3. [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring). See: [rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)).
+3. [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring). For example: [rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)).
 
 ## Design Pattern: MVC
 
