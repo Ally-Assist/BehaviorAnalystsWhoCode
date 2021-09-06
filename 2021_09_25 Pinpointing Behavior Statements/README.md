@@ -154,7 +154,7 @@ In this demo resources are especially constrained.
 
 Thus, I will break the development down into excruciatingly small chunks.
 
-1. First, develop a basic "model" (see below).
+1. This phase: develop a basic "model" (see below).
 
 2. Second: add a basic desktop GUI ("view controllers") for interaction.
 
@@ -164,7 +164,7 @@ Thus, I will break the development down into excruciatingly small chunks.
 
 If the project garners interest among the Behavior Analysts Who Code community, then we may continue it in later sessions. Ideally, members of the community would volunteer to help with coding, test data, data collection, and analysis.
 
-Okay, so this is a toy application. May not be useful to anyone. But, it might be a good framework for learning about building an application as a team scattered across the galaxy. Or at least the planet.
+Okay, so this may only ever be a toy application. It may not be useful to anyone. But, it also might be a good framework for learning about building an application as a team scattered across the galaxy. Or at least the planet.
 
 ---
 
