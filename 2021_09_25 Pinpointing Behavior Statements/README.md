@@ -281,7 +281,7 @@ I will develop the basic application model, and for me, that means:
 
 3. The implementation includes at minimum at least two files for each class: the class definition/implementation, and the goal-setting unit tests.
 
-4. Refactor as the need is discovered.
+4. Refactor ([behavior preserving transformations](https://martinfowler.com/books/refactoring.html)) as the need is discovered.
 
 
 ---
