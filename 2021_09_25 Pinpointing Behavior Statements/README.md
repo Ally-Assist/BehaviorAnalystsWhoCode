@@ -70,7 +70,7 @@ For those who are ***really really*** interested, it would be useful to at least
 
 7. ***[Demo: Continuous-Feedback Development](#demo-continuous-feedback-development):*** Demo with live development project (will have basic framework in place, then do some coding to illustrate one important concept in more detail, e.g., Test Driven Development)
 
-8. Where to go from here? What might a next step be? Do it in another presentation?
+8. ***[Where to go from here?](#where-to-from-here):*** What might a next step be? Do it in another presentation?
 
 ---
 
