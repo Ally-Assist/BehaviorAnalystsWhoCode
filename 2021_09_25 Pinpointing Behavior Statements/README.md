@@ -166,7 +166,7 @@ Okay, so this is a toy application. May not be useful to anyone. But, it might b
 
 Software components may go by many names. We will focus on objects, as in [Object-Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming).
 
-The following [software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern) will guide the overall structure of the application. While most "end-users" picture an application as a [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface), the reality is generally quite different.
+The following [software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern) will guide the overall structure of the application. While most [end users](https://en.wikipedia.org/wiki/End_user) picture an application as a [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface), the reality is generally quite different.
 
 ## 4.1 Design Pattern: MVC
 
@@ -178,7 +178,7 @@ The model is the "M" in "MVC".
 
 The model is the core engine of an application. This is where the main logic and data are encapsulated, and where the core behavior of the application is defined. The model defines the full set of possible interactions with, or actions on, the data. It is generally embodied as a code module (a.k.a., a library, a package). 
 
-Thus, the primary user user for a model is generally a programmer, and the interface is an [application programming interface (API)](https://en.wikipedia.org/wiki/API). The "end-user" interface is built upon the model, perhaps through other intervening layers of software.
+Thus, the primary user user for a model is generally a programmer, and the interface is an [application programming interface (API)](https://en.wikipedia.org/wiki/API). The end user interface is built upon the model, perhaps through other intervening layers of software.
 
 ##### Functional model: as simulation
 
