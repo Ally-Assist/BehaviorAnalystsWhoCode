@@ -62,13 +62,11 @@ For those who are ***really really*** interested, it would be useful to at least
 
 2. ***[Development Strategy](#development-strategy):*** Overall (basic) development strategy in terms of incremental phases shaping the functionality of the code toward the overall goal.
 
-3. ***[Basic Requirements of Prototype](#basic-requirements-of-prototype):*** What will the first prototype phase do?
+3. ***[Major Software Components](#major-software-components):*** The logical units of software which implement specific behaviors. Taken as a whole, an application (or model) can be viewed as an emergent arising from all of the components interacting.
 
-4. ***[Major Software Components](#major-software-components):*** The logical units of software which implement specific behaviors. Taken as a whole, an application (or model) can be viewed as an emergent arising from all of the components interacting.
+4. ***[Initial Development Process](##initial-development-process):*** A tentative set of steps in using the tools to meet the requirements specified for the application scenario. 
 
 5. ***[Tools](#tools):*** Software that will be used in the initial "simple prototype" phase, plus some possible tools for future directions.
-
-6. ***[A Development Process](#a-development-process):*** A tentative set of steps in using the tools to meet the requirements specified for the application scenario. 
 
 7. ***[Demo: Continuous-Feedback Development](#demo-continuous-feedback-development):*** Demo with live development project (will have basic framework in place, then do some coding to illustrate one important concept in more detail, e.g., Test Driven Development)
 
