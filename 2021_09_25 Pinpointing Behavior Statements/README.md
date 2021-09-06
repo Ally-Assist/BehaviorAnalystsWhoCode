@@ -127,7 +127,7 @@ If we were to carry the project through, one possible finished system:
 
 1. Can be used by large numbers of users to classify statements within different domains.
 
-2. Some users (domain admins?) would be able to feed streams of statements into the system, along with descriptions of what issue(s) the statements are addressing.
+2. Some users (admins?) would be able to define new domains, feed streams of statements into the system, along with descriptions of what issue(s) the statements are addressing.
 
 3. Users would get feedback on their "correctness" and fluency scores (when?). System would be used to train and maintain rating behaviors. Work product would be domain specific sets of statements classified as to how behavioral they are, and in what ways the "non-behavioral" statements differ from what is desired.
 
@@ -142,11 +142,19 @@ If we were to carry the project through, one possible finished system:
 
 The main problem in developing such an application is, as always, resources: to more completely define the problem, design the system, implement it, and deploy it.
 
-In this demo resources are far more constrained than in most.
+In this demo resources are very constrained.
 
-Thus, we will break the development down into excruciatingly small chunks.
+Thus, I will break the development down into excruciatingly small chunks.
 
-If the project garners interest among the Behavior Analysts Who Code community, then there may be further phases. Ideally, members of the community would volunteer to help with coding, test data, data collection, and analysis.
+1. First, develop a basic "model" (see below).
+
+2. Second: add a basic desktop GUI for interaction.
+
+3. Third: add basic graphs and table displays for simple data analysis.
+
+4. And so on.
+
+If the project garners interest among the Behavior Analysts Who Code community, then we may continue it in later sessions. Ideally, members of the community would volunteer to help with coding, test data, data collection, and analysis.
 
 Okay, so this is a toy application. May not be useful to anyone. But, it might be a good framework for learning about building an application as a team scattered across the galaxy. Or at least the planet.
 
@@ -166,7 +174,7 @@ The most common, and most basic, application software design pattern over the pa
 
 The "model" encapsulates all of the data and the behavior. It defines the full set of possible interactions with, or actions on, the data. It is generally embodied as a code module (a.k.a., a library, a package). Thus, the primary user user for a model is generally a programmer, and the interface is an [application programming interface (API)](https://en.wikipedia.org/wiki/API).
 
-#### Functional model: as simulation
+##### Functional model: as simulation
 
 The model owns, encapsulates, protects, provides access to, all data. The model provides all behaviors that affect the internal state of the model, and which provide services to the "outside world".
 
@@ -180,7 +188,7 @@ The model defines:
 
 3. The values returned in response to the request, if any.
 
-#### Data model: the proverbial "Dead Man"
+##### Data model: the proverbial "Dead Man"
 
 Besides behavior, the model includes data, which is the internal state of the organism, its "guts". These guts are part of the functional model, but are frequently externalized as a storage format, such as a [relational database entity-relationship model](https://en.wikipedia.org/wiki/Entity–relationship_model).
 
