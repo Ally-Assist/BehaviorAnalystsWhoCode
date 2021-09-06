@@ -138,7 +138,17 @@ If we were to carry the project through, one possible finished system:
 
 ***How to break it down into digestible chunks?***
 
-The main problem in developing such an application is, as always, resources: to more completely define the problem, to design the system, to implement it, to evaluate the implementation, and to deploy it.
+The main problem in developing such an application is, as always, resources: 
+
+1. to more completely define the problem, 
+
+2. to design the system, 
+
+3. to implement it, 
+
+4. to evaluate the implementation, and 
+
+5. to deploy each application version.
 
 In this demo resources are especially constrained.
 
