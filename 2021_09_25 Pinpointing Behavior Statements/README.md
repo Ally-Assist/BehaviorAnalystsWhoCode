@@ -180,7 +180,7 @@ Which raises the issue of breaking software up into manageable units with well d
 
 The most common, and most basic, application software design pattern over the past few decades is known as [model-view-controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller).  It goes hand-in-hand with [object oriented programming](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f), and seems to originate with the development of the [Smalltalk language](https://en.wikipedia.org/wiki/Smalltalk) in the late 1960s.
 
-### Model: The behaving organism
+## 4.2 Model: The behaving organism
 
 The model is the "M" in "MVC".
 
@@ -190,7 +190,7 @@ The model is the core engine of an application. This is where the main logic and
 
 The primary user user for a model is generally a programmer, and the interface is an [application programming interface (API)](https://en.wikipedia.org/wiki/API). The end user interface is built upon the model, perhaps through other intervening layers of software.
 
-##### Functional model: as simulation
+### Functional model: as simulation
 
 The model owns, encapsulates, protects, provides access to, all data. The model provides all behaviors that affect the internal state of the model, and which provide services to the "outside world".
 
@@ -204,7 +204,7 @@ The model defines:
 
 3. The values returned in response to the request, if any.
 
-##### Data model: the proverbial "Dead Man"
+### Data model: the proverbial "Dead Man"
 
 Besides behavior, the model includes data, which is the internal state of the organism, its "guts". These guts are part of the functional model, but are frequently externalized as a storage format, such as a [relational database entity-relationship model](https://en.wikipedia.org/wiki/Entity–relationship_model).
 
@@ -212,7 +212,7 @@ The data model only defines a bare outline of the data items in the model, and t
 
 That is, the data model is structural; the overall model is functional.
 
-### View-Controller: The User Interface
+## 4.3 View-Controller: The User Interface
 
 In our case, the "view-controller" components of the MVC pattern will be combined into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). This intermixing is pretty standard, unless you are the person who is developing the individual "views" and "controllers" (and sometimes even then).
 
@@ -224,21 +224,6 @@ In our case, the "view-controller" components of the MVC pattern will be combine
 
 3. Multiple [graphical user interfaces (GUIs)](https://en.wikipedia.org/wiki/Graphical_user_interface) on a variety of platforms (e.g., iOS, macOS, tvOS, watchOS, MS Windows, Xamarin, browser interfaces). All of these interfaces could be implemented against the same model.
 
-## 4.2 Model Components
-
-***Statements, responses, ...***
-
-![Model: the organism living in the application](./Documentation/TBD%20Diagram.png "Model: the organism living in the application").
-
-
-
-## 4.4 View-Controller Components
-
-***Window containing view of current statement, possible categorization choices, controls to make responses and traverse statements; data displays***
-
-**NO. Will not do a GUI for this demo. Too much work. Too little time.***
-
-Maybe a next phase?
 
 
 ---
