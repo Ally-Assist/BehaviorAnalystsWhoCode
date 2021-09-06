@@ -224,7 +224,7 @@ That is, the data model is structural; the overall model is functional.
 
 In our case, the "view-controller" components of the MVC pattern will be combined into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). This intermixing is pretty standard, unless you are the person who is developing the individual "views" and "controllers" (and sometimes even then).
 
-***"The"*** user interface is difficult to specify. Models typically are presented to different audiences via different end user interfaces. Foe example:
+***"The"*** user interface is difficult to specify. Models typically are presented to different audiences via different end user interfaces. For example:
 
 1. A [command line (CLI)](https://en.wikipedia.org/wiki/Command-line_interface).
 
@@ -240,7 +240,7 @@ In our case, the "view-controller" components of the MVC pattern will be combine
 
 ***What are the steps in using the tools to develop the major components and verifying that they work and will continue working?***
 
-Development processes are very idiosyncratic to individuals, teams, development organizations, and so on up the ladder. These days this is a reasonable starting point: [Manifesto for Agile Software Development](https://agilemanifesto.org). Whether or not it has ever been carried out as intended is controversial. But the ideas are interesting.
+Development processes are very idiosyncratic to individuals, teams, development organizations, and so on up the ladder. These days "Agile" is a reasonable starting point: [Manifesto for Agile Software Development](https://agilemanifesto.org). Whether or not it has ever been carried out as intended is controversial. But the ideas are interesting.
 
 My idiosyncratic process for this project starts with the preceding steps, which are not necessarily sequential, and probably should not be:
 
