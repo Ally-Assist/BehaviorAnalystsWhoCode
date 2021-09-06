@@ -58,26 +58,26 @@ I will cover the following topics superficially to provide a context for the dem
 
 For those who are ***really really*** interested, it would be useful to at least skim over the linked material before the presentation.
 
-1. ***[Scenario](#1-scenario):*** Behavior analytic scenario as the motivation for the project.
+1. ***[Scenario](#scenario):*** Behavior analytic scenario as the motivation for the project.
 
-2. ***[Development Strategy](#2-development-strategy):*** Overall (basic) development strategy in terms of incremental phases shaping the functionality of the code toward the overall goal.
+2. ***[Development Strategy](#development-strategy):*** Overall (basic) development strategy in terms of incremental phases shaping the functionality of the code toward the overall goal.
 
-3. ***[Basic Requirements of Prototype](#3-basic-requirements-of-prototype):*** What will the first prototype phase do?
+3. ***[Basic Requirements of Prototype](#basic-requirements-of-prototype):*** What will the first prototype phase do?
 
-4. ***[Major Software Components](#4-major-software-components):*** The logical units of software which implement specific behaviors. Taken as a whole, an application (or model) can be viewed as an emergent arising from all of the components interacting.
+4. ***[Major Software Components](#major-software-components):*** The logical units of software which implement specific behaviors. Taken as a whole, an application (or model) can be viewed as an emergent arising from all of the components interacting.
 
-5. ***[Tools](#5-tools):*** Software that will be used in the initial "simple prototype" phase, plus some possible tools for future directions.
+5. ***[Tools](#tools):*** Software that will be used in the initial "simple prototype" phase, plus some possible tools for future directions.
 
-6. ***[A Development Process](#6-a-development-process):*** A tentative set of steps in using the tools to meet the requirements specified for the application scenario. 
+6. ***[A Development Process](#a-development-process):*** A tentative set of steps in using the tools to meet the requirements specified for the application scenario. 
 
-7. ***[Demo: Continuous-Feedback Development](#7-demo-continuous-feedback-development):*** Demo with live development project (will have basic framework in place, then do some coding to illustrate one important concept in more detail, e.g., Test Driven Development)
+7. ***[Demo: Continuous-Feedback Development](#demo-continuous-feedback-development):*** Demo with live development project (will have basic framework in place, then do some coding to illustrate one important concept in more detail, e.g., Test Driven Development)
 
 8. Where to go from here? What might a next step be? Do it in another presentation?
 
 ---
 
 
-# 1. Scenario
+# Scenario
 
 ***What is the behavior analytic purpose?***
 
@@ -87,7 +87,7 @@ Thus, the issue/setting being addressed by the statements would have to be ident
 
 Besides the general need of classifying behaviors, we also want to collect data that will support efforts to improve the entire process: train users to classify statements; the criteria used in classifying statements; the explanations of the criteria; how the user interacts with the system; and so on.
 
-### 1.1 General Need
+## General Need
 
 Would like software that would facilitate the process of training people to do the classification, and to collect classifications of large volumes of behavior statements.
 
@@ -109,7 +109,7 @@ A few relevant articles:
 
 3. [Vital Behaviors](https://sourcesofinsight.com/vital-behaviors/)
 
-### 1.2 Main Data Collection Need
+## Main Data Collection Need
 
 There are two main use cases relating to data collection:
 
@@ -121,7 +121,7 @@ It is a classic "chicken and egg" problem: to train users to classify, we need a
 
 We will start with the most basic requirement: collecting classification ratings by user. One possible procedure would be to have a group of users do classifications until there is a high inter-rater agreement on a large percentage of the statements, say, 95% agreement on ratings of statements. Should probably also have some fluency requirement, or at least require some steady state for latencies, inter-response times, overall rates.
 
-### 1.3 Final Product
+## Final Product
 
 If we were to carry the project through, one possible finished system:
 
@@ -136,7 +136,7 @@ If we were to carry the project through, one possible finished system:
 
 ---
 
-# 2. Development Strategy
+# Development Strategy
 
 ***How to break it down into digestible chunks?***
 
@@ -160,7 +160,7 @@ Okay, so this is a toy application. May not be useful to anyone. But, it might b
 
 ---
 
-# 4. Major Software Components
+# Major Software Components
 
 ***What code will I develop?***
 
@@ -176,11 +176,11 @@ Which raises the issue of breaking software up into manageable units with well d
 
 3. [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring). See: [rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)).
 
-## 4.1 Design Pattern: MVC
+## Design Pattern: MVC
 
 The most common, and most basic, application software design pattern over the past few decades is known as [model-view-controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller).  It goes hand-in-hand with [object oriented programming](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f), and seems to originate with the development of the [Smalltalk language](https://en.wikipedia.org/wiki/Smalltalk) in the late 1960s.
 
-## 4.2 Model: The behaving organism
+## Model: The behaving organism
 
 The model is the "M" in "MVC".
 
@@ -212,7 +212,7 @@ The data model only defines a bare outline of the data items in the model, and t
 
 That is, the data model is structural; the overall model is functional.
 
-## 4.3 View-Controller: The User Interface
+## View-Controller: The User Interface
 
 In our case, the "view-controller" components of the MVC pattern will be combined into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). This intermixing is pretty standard, unless you are the person who is developing the individual "views" and "controllers" (and sometimes even then).
 
@@ -228,7 +228,7 @@ In our case, the "view-controller" components of the MVC pattern will be combine
 
 ---
 
-# 5. Initial Development Process
+# Initial Development Process
 
 ***What are the steps in using the tools to develop the major components and verifying that they work and will continue working?***
 
@@ -271,7 +271,7 @@ I will develop the basic application model, and for me, that means:
 
 ---
 
-# 6. Tools
+# Tools
 
 ***What software will I use to develop?***
 
@@ -314,7 +314,7 @@ This is a very cursory overview of the tools I will use in this current simple p
 
 ---
 
-# 7. Demo: Continuous-Feedback Development
+# Demo: Continuous-Feedback Development
 
 ***TO BE DONE***
 
@@ -355,7 +355,7 @@ If Ryan is not available, might this be time for "audience participation"?
 
 ---
 
-# 8. Where to From Here?
+# Where to From Here?
 
 ***TO BE DONE***
 
