@@ -250,7 +250,7 @@ My idiosyncratic process for this project starts with the preceding steps, which
 
 3. Development strategy
 
-Then design and implementation. In large projects involving multiple teams, one would likely need a more heavy-weight process involving many many lengthy meetings before any real design or coding began.
+Then design and implementation. In large projects involving multiple teams, one would likely need a more heavy-weight process involving many many lengthy meetings before any real design or coding begins.
 
 In smaller projects (my preference), meetings and documentation should be minimal, and design and coding should be of a rapid-turnaround nature, with involvement of the "customer", frequent feedback, and so on.
 
@@ -333,6 +333,17 @@ I have yet to come up with a satisfactory name for this development technique th
 The traditional name (if such can be said of a term that was recently coined) is [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). It is a set of decades old practices bundled under a catchy new name, but more importantly, with support for it baked into most software development environments these days. For example, see Pytest in the Tools section of this doc.
 
 The basic idea is: when developing a unit of code, break the overall requirement(s) for the unit into "micro-goals" *(my term)*, and achieve those goals quickly and provably in code. Once the coding is done, keep the "test" for the unit as part of a suite of tests to confirm that functioning of the entire system whenever there is a change or a problem.
+
+## The Code Project
+
+All resources specific to this project are in this GitHub repository: 
+
+- [App: Behavioral Statement Classifier](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements)
+
+- The open source Apache License Version 2.0 is there: [LICENSE](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/blob/main/2021_09_25%20Pinpointing%20Behavior%20Statements/LICENSE)
+
+- The PyCharm Python source code is there: [source]()
+
 
 ## Main Demo
 
