@@ -17,21 +17,21 @@ Created: Sunday 22 August 2021
 
 # Overview
 
-I will provide a quick overview of some basic software development concepts, tools, and processes. Much of the presentation will be very shallow, but links are provided throughout to more in-depth information.
+I will provide a quick overview of some basic software development concepts, tools, and processes. Much of the presentation will be very shallow, but links are provided throughout this "readme" page to more in-depth information.
 
 The long term goal is to help foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective. 
 
-The focus will be one particularly important part of development that involves test as part of coding, rather than something that is done after coding. It is generally called [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). If it had been named by a behavior analyst rather than a software developer, the name might be something like ***Continuous Feedback Driven Development***, or ***Micro-Goal Driven Development***. Something that focuses on the fact that each little test sets some goal criteria for the code to meet.
+The focus will be one particularly important part of development that involves tests as part of coding, rather than something that is done after coding. It is generally called [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). If it had been named by a behavior analyst rather than a software developer, the name might be something like ***Continuous Feedback Driven Development***, or ***Micro-Goal Driven Development***. Something that focuses on the fact that each little test sets some goal criteria for the code to meet.
 
 Test Driven Development:
 
 1. will make coding easier, 
 
-2. allow you to "prove" that you code works, and 
+2. allow you to "prove" that your code works, and 
 
 3. the tests that you create during development remain as a test suite that can help find issues at any time (especially after coding seemingly unrelated areas).
 
-If participants are interested, the project may be continued in future Saturday workshops outside the usual BAWC meetup schedule. Again, the purpose is to promote software development skills within the behavior analytic community. It might even result in software that is useful to the behavior analysis community, owned by the behavior analysis community. Such "workshops" would include online participation by attendees, including taking part in writing and debugging code (see "[pair programming](https://en.wikipedia.org/wiki/Pair_programming)").
+If participants are interested, the project may be continued in future Saturday workshops outside the usual BAWC meetup schedule. Again, the purpose is to promote software development skills within the behavior analytic community. It might even result in software that is useful to the behavior analysis community, owned by the behavior analysis community. Such "workshops" would include online participation by attendees, including taking part in writing and debugging code (e.g., see "[pair programming](https://en.wikipedia.org/wiki/Pair_programming)").
 
 ### Constraints
 
@@ -45,7 +45,7 @@ The basic drivers in developing the presentation will be:
 	
 	3. Professional (or retired) software developers?
 
-2. Given the audience experience with software development, or the lack of it, this first presentation needs to be very general, and perhaps skimpy on details.
+2. Given the levels of audience experience with software development, this first presentation needs to be very general, and perhaps skimpy on details.
 
 3. The "software development project" must be in some way relevant to behavior analysis. In this case: classification of textual statements as behavioral (or not).
 
