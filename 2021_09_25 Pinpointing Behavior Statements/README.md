@@ -324,8 +324,6 @@ This is a very cursory overview of the tools I will use in this current simple p
 
 # Demo: Continuous-Feedback Development
 
-***TO BE DONE***
-
 ***How will I use the tools to create "provably correct" software?***
 
 I have yet to come up with a satisfactory name for this development technique that really captures its essence from a behavioral point of view.
@@ -342,7 +340,14 @@ All resources specific to this project are in this GitHub repository:
 
 - The open source Apache License Version 2.0 is there: [LICENSE](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/blob/main/2021_09_25%20Pinpointing%20Behavior%20Statements/LICENSE)
 
-- The PyCharm Python source code is there: [source]()
+- The PyCharm Python source code is there: [source](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements/source)
+
+
+## The Model
+
+
+
+***TO BE DONE***
 
 
 ## Main Demo
