@@ -202,7 +202,7 @@ The primary user user for a model is generally a programmer, and the interface i
 
 The model owns, encapsulates, protects, provides access to, all data. The model provides all behaviors that affect the internal state of the model, and which provide services to the "outside world".
 
-The behavior requests are generally referred to as messages, but more commonly as  [methods](https://en.wikipedia.org/wiki/Method_(computer_programming)), which should be viewed as short for "method by which some action is accomplished". We might also consider a method as a form of vital behavior that impacts some particular outcomes.
+The behavior requests are generally referred to as messages, but more commonly as  [methods](https://en.wikipedia.org/wiki/Method_(computer_programming)), which should be viewed as short for "method by which some action is accomplished". We might also consider a method a software version of a vital behavior that impacts some particular outcome.
 
 The model defines:
 
