@@ -230,82 +230,6 @@ In our case, the "view-controller" components of the MVC pattern will be combine
 
 ![Model: the organism living in the application](./Documentation/TBD%20Diagram.png "Model: the organism living in the application").
 
-Note that all identifiers for data objects are [Universally Unique Identifiers (UUIDs)](https://en.wikipedia.org/wiki/Universally_unique_identifier). In Microsoft world, the same objects are known as Globally Unique Identifiers (GUIDs). 
-
-We are not using a database in this phase we will define them as [random hex strings](https://docs.python.org/3/library/secrets.html#module-secrets).
-
-	class Statement:
-		"""
-		The textual data of a statement that has been, or will be, rated as to how
-		behavioral it is.
-		"""
-		id: UUID	# Identifier for storing/retrieving statement & associated ratings.
-		text: AnyStr # The text of the statement
-	
-	enum ResponseType:
-		"""
-		Indicates the type of response being recorded.
-		"""
-		BeginResponses,	# Pseudo-response: records when statement was first presented.
-		EndResponses,	# Pseudo-response: end of response sequence for a statement.
-		
-		Measureable,	# User response: statement of something that is measureable.
-		Objective,	# User response: statement of something that is objective.
-		Active,		# User response: statement is something a "dead man" cannot do.
-		Neutral		# User response: statement is factual, not emotional, unbiased.
-	
-	class Response:
-		"""
-		One user response to one statement.
-		"""
-		id: UUID			# Identifier of the user response.
-		statementId: UUID	# Identifier of the statement to which the user responded.
-		timestamp: float		# The time at which the response occurred (sec since epoch)
-		responseType: ResponseType # Kind of response
-		
-	class StatementCollection:
-		"""
-		The collection of textual statements. The class supports building the collection
-		of statements, but not removing statements.
-		
-		Provides access to statements by Statement.id, and by random selection without
-		replacement.
-		"""
-		
-	# TODO: Refactor response collection. Can simplify by encapsulating all responses 
-	#	for one statement into an object, then put that object into a response collection
-	# 	for all statements. This allows automation of the begin/end handling for response
-	# 	sequences for each statement, plus facilitates exception checking.
-	#
-	class ResponseCollection:
-		"""
-		Collection of user classification responses to statements.
-		
-		Responses are sequential by timestamp. Note that there may be any number of
-		responses recorded for a statement, even though there are only six types of
-		responses. This permits tracking of changed responses.
-		
-		Responses must be added to the collection starting with a Presented response
-		type. The BeginResponses response type indicates that we are beginning to collect
-		reponses for one particular statement. More importantly, it is the basis of
-		response latency. User responses are then added for that statement, and no 
-		other until after the EndResponses event is recorded for a statement. The 
-		EndResponses provides a definitive termination of responses for a statement. To
-		resume collecting responses for a statement after recording an EndResponses,
-		a BeginResponses must be first recorded.
-		"""
-		
-	
-	
-
-The model will initially consist of these major classes:
-
-1. a list of statements with a [universally unique identifier (UUID)](https://en.wikipedia.org/wiki/Universally_unique_identifier) for each statement;
-
-2. classification responses identified by type, value, and time at which a response occurred; and
-
-3. a list (of lists) structure to capture classification responses for each statement by UUID.
-
 
 
 ## 4.4 View-Controller Components
@@ -319,7 +243,50 @@ Maybe a next phase?
 
 ---
 
-# 5. Tools
+# 5. Initial Development Process
+
+***What are the steps in using the tools to develop the major components and verifying that they work and will continue working?***
+
+Development processes are very idiosyncratic to individuals, teams, development organizations, and so on up the ladder. These days this is a reasonable starting point: [Manifesto for Agile Software Development](https://agilemanifesto.org). Whether or not it has ever been carried out as intended is controversial. But the ideas are interesting.
+
+My idiosyncratic process for this project starts with the preceding steps, which are not necessarily sequential, and probably should not be:
+
+1. General requirements
+
+2. Overall software pattern
+
+3. Development strategy
+
+Then design and implementation. In large projects involving multiple teams, one would likely need a more heavy-weight process involving many many lengthy meetings before any real design or coding began.
+
+In smaller projects (my preference), meetings and documentation should be minimal, and design and coding should be of a rapid-turnaround nature, with involvement of the "customer", frequent feedback, and so on.
+
+My general preference is to simultaneously, iteratively:
+
+1. Work out the internals of the core engine, that is, the model.
+
+2. Work out the rough outline of the primary user interface of the model.
+
+3. Work out the rough outline of the end user interface (if different from the model's interface)
+
+4. Continuously integrate, evaluate, refactor
+
+I will ***not*** be designing a graphical user interface (GUI), at least not now. 
+
+I will develop the basic application model, and for me, that means:
+
+1. sketching out the major classes with extensive commenting. 
+
+2. Once I have some idea what the classes should be, start implementing. 
+
+3. The implementation includes at minimum at least two files for each class: the class definition/implementation, and the goal-setting unit tests.
+
+4. Refactor as the need is discovered.
+
+
+---
+
+# 6. Tools
 
 ***What software will I use to develop?***
 
@@ -358,15 +325,6 @@ This is a very cursory overview of the tools I will use in this current simple p
 2. ***[Matplotlib](https://matplotlib.org):*** Graphing. [Examples](https://matplotlib.org/stable/gallery/index.html)
 
 3. ***[Pandas](https://pandas.pydata.org/docs/index.html):*** Data analysis tools. If we use Pandas, it will most likely be for its [DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html) which can read from the SQLite database, and which can be fed to Matplotlib graphing objects.
-
-
----
-
-# 6. A Development Process
-
-***TO BE DONE***
-
-***What are the steps in using the tools to develop the major components and verifying that they work and will continue working?***
 
 
 ---
