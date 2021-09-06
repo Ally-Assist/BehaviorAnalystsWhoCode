@@ -166,13 +166,19 @@ Okay, so this is a toy application. May not be useful to anyone. But, it might b
 
 Software components may go by many names. We will focus on objects, as in [Object-Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming).
 
+The following [software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern) will guide the overall structure of the application. While most "end-users" picture an application as a [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface), the reality is generally quite different.
+
 ## 4.1 Design Pattern: MVC
 
 The most common, and most basic, application software design pattern over the past few decades is known as [Model-view-controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller).  It goes hand-in-hand with [object oriented programming](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f), and seems to originate with the development of the Smalltalk language in the late 1960s.
 
 ### Model: The behaving organism
 
-The "model" encapsulates all of the data and the behavior. It defines the full set of possible interactions with, or actions on, the data. It is generally embodied as a code module (a.k.a., a library, a package). Thus, the primary user user for a model is generally a programmer, and the interface is an [application programming interface (API)](https://en.wikipedia.org/wiki/API).
+The model is the "M" in "MVC".
+
+The model is the core engine of an application. This is where the main logic and data are encapsulated, and where the core behavior of the application is defined. The model defines the full set of possible interactions with, or actions on, the data. It is generally embodied as a code module (a.k.a., a library, a package). 
+
+Thus, the primary user user for a model is generally a programmer, and the interface is an [application programming interface (API)](https://en.wikipedia.org/wiki/API). The "end-user" interface is built upon the model, perhaps through other intervening layers of software.
 
 ##### Functional model: as simulation
 
