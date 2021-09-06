@@ -19,6 +19,8 @@ Created: Sunday 22 August 2021
 
 I will provide a quick overview of some basic software development concepts, tools, and processes. Much of the presentation will be very shallow, but links are provided throughout to more in-depth information.
 
+The long term goal is to help foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective. 
+
 The focus will be one particularly important part of development that involves test as part of coding, rather than something that is done after coding. It is generally called [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). If it had been named by a behavior analyst rather than a software developer, the name might be something like 'Continuous Feedback Driven Development', or 'Micro-Goal Driven Development'. Something that focuses on the fact that each little test sets some goal criteria for the code to meet.
 
 Test Driven Development:
@@ -29,9 +31,7 @@ Test Driven Development:
 
 3. the tests that you create during development remain as a test suite that can help find issues at any time (especially after coding seemingly unrelated areas).
 
-The long term goal is to help foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective.
-
-If participants are interested, the project may be included in future Saturday workshops outside the usual BAWC meetup schedule. Again, the purpose is to promote software development skills within the behavior analytic community. Such "workshops" would include online participation by attendees, including taking part in writing and debugging code (see "[pair programming](https://en.wikipedia.org/wiki/Pair_programming)").
+If participants are interested, the project may be continued in future Saturday workshops outside the usual BAWC meetup schedule. Again, the purpose is to promote software development skills within the behavior analytic community. Such "workshops" would include online participation by attendees, including taking part in writing and debugging code (see "[pair programming](https://en.wikipedia.org/wiki/Pair_programming)").
 
 ### Rationale
 
