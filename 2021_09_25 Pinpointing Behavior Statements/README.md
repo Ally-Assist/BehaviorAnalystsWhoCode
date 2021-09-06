@@ -334,9 +334,9 @@ The basic idea is: when developing a unit of code, break the overall requirement
 
 ## The Code Project
 
-All resources specific to this project are in this GitHub repository: 
+Resources specific to this project:
 
-- [App: Behavioral Statement Classifier](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements)
+- Reside within this GitHub repository: [App: Behavioral Statement Classifier](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements)
 
 - The open source Apache License Version 2.0 is there: [LICENSE](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/blob/main/2021_09_25%20Pinpointing%20Behavior%20Statements/LICENSE)
 
@@ -352,7 +352,7 @@ All resources specific to this project are in this GitHub repository:
 
 ## Main Demo
 
-Most of the code will already exist as a Python in the [project repository](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements).
+Most of the code will already exist as a Python in the [project repository](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements/source).
 
 I will leave at least one critical model component, and one view-controller component, unfinished. I will have a set of behavioral requirements for that component that the component must satisfy. As part of demonstrating Test Driven Development, I will incrementally complete the components using the Pytest [unit testing framework](https://en.wikipedia.org/wiki/Unit_testing).
 
