@@ -81,7 +81,7 @@ For those who are ***really really*** interested, it would be useful to at least
 
 ***What is the behavior analytic purpose?***
 
-Collecting and evaluating statements of behavior as part of identifying behaviors important in producing some result, otherwise known as, "pinpointing vital behaviors". Such statements would be specific to particular domains and perhaps settings within those domains.
+The purpose of the software is to collect and evaluate statements of behavior as part of identifying behaviors important in producing some result, otherwise known as, "pinpointing vital behaviors". Such statements would be specific to particular domains and perhaps settings within those domains.
 
 Thus, the issue/setting being addressed by the statements would have to be identified.
 
@@ -123,13 +123,15 @@ We will start with the most basic requirement: collecting classification ratings
 
 ### 1.3 Final Product
 
-Online system which can be used by large numbers of users to classify statements within different domains.
+If we were to carry the project through, one possible finished system:
 
-Some users (domain admins?) would be able to feed streams of statements into the system, along with descriptions of what issue(s) the statements are addressing.
+1. Can be used by large numbers of users to classify statements within different domains.
 
-Users would get feedback on their "correctness" and fluency scores (when?). System would be used to train and maintain rating behaviors. Work product would be domain specific sets of statements classified as to how behavioral they are, and in what ways the "non-behavioral" statements differ from what is desired.
+2. Some users (domain admins?) would be able to feed streams of statements into the system, along with descriptions of what issue(s) the statements are addressing.
 
-Graphs, tables, lists, of data.
+3. Users would get feedback on their "correctness" and fluency scores (when?). System would be used to train and maintain rating behaviors. Work product would be domain specific sets of statements classified as to how behavioral they are, and in what ways the "non-behavioral" statements differ from what is desired.
+
+4. Graphs, tables, lists, of data.
 
 
 ---
