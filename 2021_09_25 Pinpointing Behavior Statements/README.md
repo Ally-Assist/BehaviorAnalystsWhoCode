@@ -64,7 +64,7 @@ For those who are ***really really*** interested, it would be useful to at least
 
 3. ***[Major Software Components](#major-software-components):*** The logical units of software which implement specific behaviors. Taken as a whole, an application (or model) can be viewed as an emergent arising from all of the components interacting.
 
-4. ***[Initial Development Process](##initial-development-process):*** A tentative set of steps in using the tools to meet the requirements specified for the application scenario. 
+4. ***[Initial Development Process](#initial-development-process):*** A tentative set of steps in using the tools to meet the requirements specified for the application scenario. 
 
 5. ***[Tools](#tools):*** Software that will be used in the initial "simple prototype" phase, plus some possible tools for future directions.
 
