@@ -140,19 +140,23 @@ But if we were to carry the project through, one possible finished system:
 
 ***How to break it down into digestible chunks?***
 
+### Resources
+
 The main problem in developing such an application is, as always, resources: 
 
-1. to more completely define the problem, 
+1. resources to more completely define the problem, 
 
-2. to design the system, 
+2. resources to design the system, 
 
-3. to implement it, 
+3. resources to implement it, 
 
-4. to evaluate the implementation, and 
+4. resources to evaluate the implementation, and 
 
-5. to deploy each application version.
+5. resources to deploy each application version.
 
 In this demo resources are especially constrained.
+
+### Phases
 
 Thus, I will break the development down into excruciatingly small chunks.
 
@@ -163,6 +167,8 @@ Thus, I will break the development down into excruciatingly small chunks.
 3. Third: add basic graphs and table displays for simple data analysis.
 
 4. And so on.
+
+### Potential Future Phases
 
 If the project garners interest among the Behavior Analysts Who Code community, then we may continue it in later sessions. Ideally, members of the community would volunteer to help with coding, test data, data collection, and analysis.
 
