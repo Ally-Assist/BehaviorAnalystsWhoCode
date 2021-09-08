@@ -295,7 +295,7 @@ Program defensively.
 
 ***What software will I use to develop?***
 
-There is a very large number of choices among development tools. I will focus on the ones that I use, and which serve well in a "pro" environment. But the choice of tools is often dictated by an organization, and if not, then is a very personal and idiosyncratic choice.
+There is a very large number of choices among development tools. I will focus on the ones that I use, and which serve well in a "pro" environment. But the choice of tools is often dictated by an organization. When there are no mandates, then the choices tend to be very personal.
 
 ## Current Phase
 
