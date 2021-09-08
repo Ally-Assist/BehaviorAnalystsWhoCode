@@ -242,6 +242,8 @@ In our case, the "view-controller" components of the MVC pattern will be combine
 
 Development processes are very idiosyncratic to individuals, teams, development organizations, and so on up the ladder. These days "Agile" is a reasonable starting point: [Manifesto for Agile Software Development](https://agilemanifesto.org). Whether or not it has ever been carried out as intended is controversial. But the ideas are interesting.
 
+### One Idiosyncratic Process
+
 My idiosyncratic process for this project starts with the preceding steps, which are not necessarily sequential, and probably should not be:
 
 1. General requirements
@@ -275,6 +277,16 @@ I will develop the basic application model, and for me, that means:
 3. The implementation includes at minimum at least two files for each class: the class definition/implementation, and the goal-setting unit tests.
 
 4. Refactor ([behavior preserving transformations](https://martinfowler.com/books/refactoring.html)) as the need is discovered.
+
+### API Self Defense
+
+Note that the work product of this initial phase is essentially an [application programming interface (API)](https://en.wikipedia.org/wiki/API): objects to be used by programmers. A major part of designing any API is documenting each object method as to how it operates, what the arguments are, what values they may and may not have, ***and a self defense mechanism to ensure programmer cooperation in using the objects***.
+
+A very popular form of self defense is [Design by contract](https://en.wikipedia.org/wiki/Design_by_contract). Minimally, it includes checks at the beginning of each method to ensure that the object is in a valid state, and that the arguments passed in are valid. These conditions are generally documented in comments for the class and for each method.
+
+While it seems like common sense to do such checks, if you were developing software for MS Windows 3.0, you might remember that the announcements for MS Windows 3.1 touted an amazing new feature: sanity checking of arguments. Yep, versions of MS Windows prior to v3.1 did little or no error checking. Which let to frequent Ctrl-Alt-Deletes, and rebuilding of corrupted disks (and loss of labor and work product).
+
+Program defensively.
 
 
 ---
