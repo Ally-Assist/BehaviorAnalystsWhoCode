@@ -121,7 +121,9 @@ We will start with the most basic requirement: collecting classification ratings
 
 ## Final Product
 
-If we were to carry the project through, one possible finished system:
+There are literally infinite directions we could take in future versions. A combinatorial explosion of features.
+
+But if we were to carry the project through, one possible finished system:
 
 1. Can be used by large numbers of users to classify statements within different domains.
 
