@@ -333,8 +333,6 @@ This is a very cursory overview of the tools I will use in this current simple p
 
 1. ***[Doxygen](https://www.doxygen.nl/index.html):*** Probably the most popular documentation generator, ever. As long as you follow certain minimal language specific commenting practices, you can generate "online" for your code. The tool is a bit clunky, but so useful that it remains popular. Example: [Documenting Python Programs With Doxygen](https://www.woolseyworkshop.com/2020/06/25/documenting-python-programs-with-doxygen/#ViewingTheGeneratedDocumentation)
 
-Time permitting, I will set up Doxygen as part of this project before the presentation.
-
 1. ***[SQLAlchemy](https://www.sqlalchemy.org):*** This is a fairly high level Python [Object Relational Mapper (ORM)](https://en.wikipedia.org/wiki/Object–relational_mapping) relational database API that provides access to a variety of relational database products. In addition to providing access to remote database servers, it also works with SQLite for local storage.
 
 1. ***[SQLite](https://www.sqlite.org/index.html):*** Local relational database storage. You use SQLite every time you interact with your mobile devices, desktop computers, almost any web browser, and maybe even your refrigerator. It is used almost universally for local storage of complex (and even not so complex) application data. We would use SQLAlchemy to work with SQLite, but Python has a much lower-level interface built in, also: [sqlite3](https://www.sqlite.org/index.html).
