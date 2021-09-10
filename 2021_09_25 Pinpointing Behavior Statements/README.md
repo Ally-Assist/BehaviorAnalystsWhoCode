@@ -60,6 +60,8 @@ I will cover the following topics superficially to provide a context for the dem
 
 For those who are ***really really*** interested, it would be useful to at least skim over the linked material before the presentation.
 
+1. ***[Critical Development Techniques]():*** Two of the most important software development techniques that you have never heard of.
+
 1. ***[Scenario](#scenario):*** Behavior analytic scenario as the motivation for the project.
 
 2. ***[Development Strategy](#development-strategy):*** Overall (basic) development strategy in terms of incremental phases shaping the functionality of the code toward the overall goal.
@@ -70,7 +72,7 @@ For those who are ***really really*** interested, it would be useful to at least
 
 5. ***[Tools](#tools):*** Software that will be used in the initial "simple prototype" phase, plus some possible tools for future directions.
 
-7. ***[Demo: Continuous-Feedback Development](#demo-continuous-feedback-development):*** Demo with live development project (will have basic framework in place, then do some coding to illustrate one important concept in more detail, e.g., Test Driven Development)
+7. ***[Demo: Continuous Feedback Development](#demo-continuous-feedback-development):*** Demo with live development project (will have basic framework in place, then do some coding to illustrate one important concept in more detail, e.g., Test Driven Development)
 
 8. ***[Where to go from here?](#where-to-from-here):*** What might a next step be? Do it in another presentation?
 
