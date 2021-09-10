@@ -25,7 +25,7 @@ In light of the ever increasing importance of software in all aspects of life, i
 
 1. Foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective. 
 
-1. Contribute to the continuing development of an ecosystem of software development aware behavior analysts.
+1. Contribute to the continuing development of an ecosystem of behavior analysts who are software development aware.
 
 1. Call out important aspects of software development and leave a trail of breadcrumbs (i.e., links and terms) to act as entry points to a deeper understanding for those who care to pursue them.
 
