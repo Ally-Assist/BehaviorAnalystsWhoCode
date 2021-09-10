@@ -139,11 +139,11 @@ The idea here is to clearly specify a the conditions for calling a function (met
 
 4. the consequences of fulfilling these expectations, or not.
 
-In developing code, you will write many "public" functions. Public functions are once that other programmers are permitted to use. There are also "private" methods that only you, as the developer of the code, may use.
+In developing code, you will write many "public" functions. Public functions are ones that other programmers are permitted to use. There are also "private" methods that only you, as the developer of the code, may use.
 
-In private functions, you control how the function is called (because it is your code hidden within your objects). You can make whatever assumptions you like about how it is used, and as long as you don't stab yourself in the eye (metaphorically), the code should behave as expected.
+In private functions, you control how the function is called (because it is your code hidden within your objects). You can make whatever assumptions you like about how it is used. As long as you don't stab yourself in the eye (metaphorically), the code should behave as expected.
 
-On the other hand, you have no idea when it will be called, by whom, or where it will be called. Thus, either you must be prepared to handled any and all circumstances, ***or*** you can limit the scope of what you must consider by specifying the "three term contingency" for a method call. This is the contract.
+With public code, on the other hand, you have no control over its usage. You cannot known when it will be called, by whom, or where it will be called. Thus, either you must be prepared to handled any and all circumstances, ***or*** you can limit the scope of what you must consider by specifying the "three term contingency" for a method call. This is the contract.
 
 ##### Implementation of Consequences
 
