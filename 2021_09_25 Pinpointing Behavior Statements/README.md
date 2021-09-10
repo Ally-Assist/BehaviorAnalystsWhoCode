@@ -184,7 +184,7 @@ Besides the general need of classifying behaviors, we also want to collect data 
 
 Would like software that would facilitate the process of training people to do the classification, and to collect classifications of large volumes of behavior statements.
 
-The general criteria. For a statement to describe a behavior, for our purposes, the statement must meet these criteria:
+For a statement to describe a behavior, for our purposes, the statement must meet the following criteria (see articles below for more/alternate information):
 
 1. Measurable: Must be observable by others than the performer: seen, heard, felt, smelled, tasted.
 
