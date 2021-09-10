@@ -143,7 +143,7 @@ In developing code, you will write many "public" functions. Public functions are
 
 In private functions, you control how the function is called (because it is your code hidden within your objects). You can make whatever assumptions you like about how it is used. As long as you don't stab yourself in the eye (metaphorically), the code should behave as expected.
 
-With public code, on the other hand, you have no control over its usage. You cannot known when it will be called, by whom, or where it will be called. Thus, either you must be prepared to handled any and all circumstances, ***or*** you can limit the scope of what you must consider by specifying the "three term contingency" for a method call. This is the contract.
+With public code, on the other hand, you have no control over its usage. You cannot known when it will be called, by whom, or where it will be called. Thus, either you must be prepared to handled any and all circumstances, ***or*** you can limit the scope of what you must consider by specifying the "three term contingency" for a method call. This is the contract described above.
 
 ##### Implementation of Consequences
 
