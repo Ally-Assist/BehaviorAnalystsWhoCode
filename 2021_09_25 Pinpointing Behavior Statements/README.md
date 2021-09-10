@@ -299,6 +299,7 @@ The most common, and most basic, application software design pattern over the pa
 
 **The "C" is the controller**, or set of controllers. *It is part of the user interface.* Controllers allow you to talk to the model, tell it what to do. Things like buttons, sliders, text boxes.
 
+
 ## Model: The behaving organism
 
 The model is the "M" in "MVC".
@@ -323,7 +324,7 @@ The model defines:
 
 3. The values returned in response to the request, if any.
 
-### Data model: the proverbial "Dead Man"
+### Structural data model: the proverbial "Dead Man"
 
 Besides behavior, the model includes data, which is the internal state of the organism, its "guts". These guts are part of the functional model, but are frequently externalized as a storage format, such as a [relational database entity-relationship model](https://en.wikipedia.org/wiki/Entity–relationship_model).
 
