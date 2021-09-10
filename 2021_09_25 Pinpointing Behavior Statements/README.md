@@ -19,21 +19,21 @@ Created: Sunday 22 August 2021
 
 I will provide a quick overview of some basic software development concepts, tools, and processes. Much of the presentation will be very shallow, but links are provided throughout this "readme" page to more in-depth information.
 
-The long term goal is to help foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective. 
+In light of the every increasing importance of software in all aspects of life, including in behavior analysis, my major goals:
 
-The focus will be one particularly important part of development that involves tests as part of coding, rather than something that is done after coding. It is generally called [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). If it had been named by a behavior analyst rather than a software developer, the name might be something like ***Continuous Feedback Driven Development***, or ***Micro-Goal Driven Development***. Something that focuses on the fact that each little test sets some goal criteria for the code to meet.
+1. Foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective. 
 
-Test Driven Development:
+2. Call out important aspects of software development and leave a trail of breadcrumbs (i.e., links and terms) to act as entry points to a deeper understanding for those who care to pursue them.
 
-1. will make coding easier, 
+3. Contribute to the "behavioralization" of software development. I will strive to explain practices in behavioral terms, at least for some software development practices. The most productive practices *should* make sense from a behavior analytic perspective. 
 
-2. allow you to "prove" that your code works, and 
+### Future Presentations
 
-3. the tests that you create during development remain as a test suite that can help find issues at any time (especially after coding seemingly unrelated areas).
+If participants are interested, the project may be continued in future Saturday workshops outside the usual BAWC meetup schedule. Again, the purpose is to promote software development skills within the behavior analytic community. It might even result in software that is useful to the behavior analysis community, owned by the behavior analysis community. 
 
-If participants are interested, the project may be continued in future Saturday workshops outside the usual BAWC meetup schedule. Again, the purpose is to promote software development skills within the behavior analytic community. It might even result in software that is useful to the behavior analysis community, owned by the behavior analysis community. Such "workshops" would include online participation by attendees, including taking part in writing and debugging code (e.g., see "[pair programming](https://en.wikipedia.org/wiki/Pair_programming)").
+Such "workshops" would include online participation by attendees, including taking part in writing and debugging code (e.g., see "[pair programming](https://en.wikipedia.org/wiki/Pair_programming)"). Ideally, the process would evolve to include Behavior Analysts Who Code members taking ownership of parts of the app, working offline (perhaps in pairs), presenting to the "team", and guiding online collaborative, cooperative, work.
 
-### Constraints
+### Presentation Constraints
 
 The basic drivers in developing the presentation will be:
 
@@ -71,6 +71,89 @@ For those who are ***really really*** interested, it would be useful to at least
 7. ***[Demo: Continuous-Feedback Development](#demo-continuous-feedback-development):*** Demo with live development project (will have basic framework in place, then do some coding to illustrate one important concept in more detail, e.g., Test Driven Development)
 
 8. ***[Where to go from here?](#where-to-from-here):*** What might a next step be? Do it in another presentation?
+
+---
+
+# Critical Development Techniques
+
+There are two development techniques that changed my life as a software developer when I was "forced" to start using them. They are techniques that are rarely, if ever, taught in computer science classes. They are interrelated, but each has a different target population.
+
+I will give examples of both in the demo, but first, a preview here.
+
+
+### Continuous Feedback Driven Development
+
+The term "Continuous Feedback Driven Development" is a behavioralization. The technique is actually known within the software development community as [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). 
+
+The primary features of this technique are:
+
+1. Define requirements for a unit of functionality.
+
+1. Create some skeleton code to implement the unit.
+
+1. Create some skeleton code to test the unit.
+
+1. Implementation one micro-goal at a time:
+
+	1. Encode the next (or first) micro-goal within the unit test to specify some "vital behavior" that the implementation must master.
+
+	1. Work the implementation until the unit test says that the micro-goal has been mastered.
+
+	1. Rinse repeat until all requirements for the functional unit are fulfilled.
+
+Naturally, TDD is more complicated than this. Or can be. But the essence is breaking a coding task down into micro-goals and achieving them with nearly instantaneous feedback.
+
+The process results in two work products:
+
+1. The main code that "works as tested", that is, provably provides particular functionality. So long as the requirements for using the code are met, then the code will provide the specified service.
+
+2. The unit test(s) form a suite of tests that can be run at any time. This is critical because any change to one object can affect any number of other objects in completely unexpected ways. Bugs happen, where "bug" is a programmer error. The classic lament after an application stops working is, "I only changed a comment!" The entire suite of unit tests MUST be run and PASSED before sharing code.
+
+### Clear Usage Expectations
+
+***This technique will be part of the live demo.***
+
+This technique is generally some combination of [design by contract](https://en.wikipedia.org/wiki/Design_by_contract) and [defensive programming](https://en.wikipedia.org/wiki/Defensive_programming). 
+
+##### The Contract: Antecedents
+
+The idea here is to clearly specify a the conditions for calling a function (method, message, procedure, whatever), and the consequences of doing so correctly or incorrectly:
+
+1. the environment in which a piece of code may be used (e.g, in terms of previous actions);
+
+2. what information the code object must already have;
+
+3. what information must be supplied to the code object that you are calling; and
+
+4. the consequences of fulfilling these expectations, or not.
+
+In developing code, you will write many "public" functions. Public functions are once that other programmers are permitted to use. There are also "private" methods that only you, as the developer of the code, may use.
+
+In private functions, you control how the function is called (because it is your code hidden within your objects). You can make whatever assumptions you like about how it is used, and as long as you don't stab yourself in the eye (metaphorically), the code should behave as expected.
+
+On the other hand, you have no idea when it will be called, by whom, or where it will be called. Thus, either you must be prepared to handled any and all circumstances, ***or*** you can limit the scope of what you must consider by specifying the "three term contingency" for a method call. This is the contract.
+
+##### Implementation of Consequences
+
+The contract is text that attempts to set the occasion for certain behaviors on the part of the software developer. But it is just text. Something must implement the specified contingencies. 
+
+As described in the linked pages on design by contract and defensive programming, your code must implement the contingencies. There are various ways to do this, some of which will be illustrated in the demo.
+
+There are two primary ways to enforce the rules:
+
+1. Throw an informative error that may be "caught" and handled. You would generally do this in the case of a runtime error that might not be under the control of the programmer calling your code. For example, a file has gone missing.
+
+2. Deliberately crash the program (that is, "assert fail"). Generally, you do this if you consider the situation to be a simple programming error that should be corrected by the programmer calling your code. For example, you have specified that an argument, such as `first_name` must be supplied, but the programmer called your code with a null/None value for `fist_name`.
+
+This is complicated by the fact that different languages use different conventions with regard to "production" code versus "debug" code. Generally, "assert fails" are NOT included in production code, but errors (a.k.a., exceptions) are. This makes sense when you consider that most code calling issues will occur in development, and by the time you put a code out for other people to use, there ***should*** be few if any coding errors, only runtime resource errors.
+
+The other way to look at it:
+
+1. Assertions provide feedback to programmers during development.
+
+2. Errors/exceptions provide feedback to the users of your system.
+
+
 
 ---
 
