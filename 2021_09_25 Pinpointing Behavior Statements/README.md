@@ -60,7 +60,7 @@ I will cover the following topics superficially to provide a context for the dem
 
 For those who are ***really really*** interested, it would be useful to at least skim over the linked material before the presentation.
 
-1. ***[Critical Development Techniques]():*** Two of the most important software development techniques that you have never heard of.
+1. ***[Critical Development Techniques](#critical-development-techniques):*** Two of the most important software development techniques that you have never heard of.
 
 1. ***[Scenario](#scenario):*** Behavior analytic scenario as the motivation for the project.
 
