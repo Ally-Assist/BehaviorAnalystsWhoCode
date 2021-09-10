@@ -180,7 +180,7 @@ Thus, the issue/setting being addressed by the statements would have to be ident
 
 Besides the general need of classifying behaviors, we also want to collect data that will support efforts to improve the entire process: train users to classify statements; the criteria used in classifying statements; the explanations of the criteria; how the user interacts with the system; and so on.
 
-## General Need
+### General Need
 
 Would like software that would facilitate the process of training people to do the classification, and to collect classifications of large volumes of behavior statements.
 
@@ -202,7 +202,7 @@ A few relevant articles:
 
 3. [Vital Behaviors](https://sourcesofinsight.com/vital-behaviors/)
 
-## Main Data Collection Need
+### Main Data Collection Need
 
 There are two main use cases relating to data collection:
 
@@ -214,7 +214,7 @@ It is a classic "chicken and egg" problem: to train users to classify, we need a
 
 We will start with the most basic requirement: collecting classification ratings by user. One possible procedure would be to have a group of users do classifications until there is a high inter-rater agreement on a large percentage of the statements, say, 95% agreement on ratings of statements. Should probably also have some fluency requirement, or at least require some steady state for latencies, inter-response times, overall rates.
 
-## Final Product
+### Final Product
 
 There are literally infinite directions we could take in future versions. A combinatorial explosion of features.
 
