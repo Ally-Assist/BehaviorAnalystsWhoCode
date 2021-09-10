@@ -444,13 +444,13 @@ This is a very cursory overview of the tools I will use in this current simple p
 
 ***How will I use the tools to create "provably correct" and bulletproof software?***
 
-To set the stage: the code for this initial phase of development will have already been developed up to a point. The demo will complete the functionality for this phase (I hope) in a manner that illustrates the [Critical Development Techniques](#critical-development-techniques).
+To set the stage: the code for this initial phase of development will have already been developed up to a point. This demo will complete the functionality for this phase (I hope) in a manner that illustrates the [Critical Development Techniques](#critical-development-techniques).
 
 ### The Code Project
 
 Resources specific to this project:
 
-- Reside within this GitHub repository: [App: Behavioral Statement Classifier](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements)
+- GitHub repository: [App: Behavioral Statement Classifier](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements)
 
 - The open source Apache License Version 2.0 is here: [LICENSE](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/blob/main/2021_09_25%20Pinpointing%20Behavior%20Statements/LICENSE)
 
