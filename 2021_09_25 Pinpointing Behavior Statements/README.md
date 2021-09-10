@@ -450,7 +450,7 @@ To set the stage: the code for this initial phase of development will have alrea
 
 Resources specific to this project:
 
-- GitHub repository: [App: Behavioral Statement Classifier](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements)
+- Public GitHub repository: [App: Behavioral Statement Classifier](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements)
 
 - The open source Apache License Version 2.0 is here: [LICENSE](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/blob/main/2021_09_25%20Pinpointing%20Behavior%20Statements/LICENSE)
 
