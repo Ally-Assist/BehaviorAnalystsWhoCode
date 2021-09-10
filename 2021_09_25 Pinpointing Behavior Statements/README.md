@@ -2,7 +2,7 @@
 
 Subtitle: **A Quick Overview of Professional-Style Software Development in Python**
 
-Material related to a presentation on Sunday 25 September 2021 @ 12:00 to the Slack channel, [Behavior Analysts Who Code](https://www.codingbehavioranalysts.org)
+Material related to a presentation on Sunday 25 September 2021 @ 12:00 to the Slack channel, [Behavior Analysts Who Code (BAWC)](https://www.codingbehavioranalysts.org)
 
 ***This will change frequently up to the presentation date***
 
@@ -25,7 +25,7 @@ In light of the ever increasing importance of software in all aspects of life, i
 
 1. Foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective. 
 
-1. Contribute to the continuing development of an ecosystem of behavior analysts who are software development aware.
+1. Contribute to the continuing development of an ecosystem of behavior analysts who are software-development aware.
 
 1. Call out important aspects of software development and leave a trail of breadcrumbs (i.e., links and terms) to act as entry points to a deeper understanding for those who care to pursue them.
 
@@ -33,7 +33,7 @@ In light of the ever increasing importance of software in all aspects of life, i
 
 ### Future Presentations
 
-If participants are interested, the project may be continued in future Saturday workshops outside the usual BAWC meetup schedule. Again, the purpose is to promote software development skills within the behavior analytic community. It might even result in software that is useful to the behavior analysis community, owned by the behavior analysis community. 
+If participants are interested, the project may be continued in future Saturday workshops outside the usual [Behavior Analysts Who Code (BAWC)](https://www.codingbehavioranalysts.org) meetup schedule. Again, the purpose is to promote software development skills within the behavior analytic community. It might even result in software that is useful to the behavior analysis community, owned by the behavior analysis community. 
 
 Such "workshops" would include online participation by attendees, including taking part in writing and debugging code (e.g., see "[pair programming](https://en.wikipedia.org/wiki/Pair_programming)"). Ideally, the process would evolve to include Behavior Analysts Who Code members taking ownership of parts of the app, working offline (perhaps in pairs), presenting to the "team", and guiding online collaborative, cooperative, work.
 
