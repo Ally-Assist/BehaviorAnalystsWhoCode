@@ -17,7 +17,9 @@ Created: Sunday 22 August 2021
 
 # Overview
 
-I will provide a quick overview of some basic software development concepts, tools, and processes. Much of the presentation will be very shallow, but links are provided throughout this "readme" page to more in-depth information.
+I will provide a quick overview of some basic software development concepts, tools, and processes. 
+
+There is a ***lot*** of material here. Much of the presentation will be very shallow, but links are provided throughout this "readme" page to more in-depth information.
 
 In light of the ever increasing importance of software in all aspects of life, including in behavior analysis, my major goals:
 
@@ -72,7 +74,7 @@ For those who are ***really really*** interested, it would be useful to at least
 
 5. ***[Tools](#tools):*** Software that will be used in the initial "simple prototype" phase, plus some possible tools for future directions.
 
-7. ***[Demo: Continuous Feedback Development](#demo-continuous-feedback-development):*** Demo with live development project (will have basic framework in place, then do some coding to illustrate one important concept in more detail, e.g., Test Driven Development)
+7. ***[Demo: Correct and Bulletproof](#demo-correct-and-bulletproof):*** Demo with live development project (will have basic framework in place, then do some coding to illustrate the "Critical Development Techniques".
 
 8. ***[Where to go from here?](#where-to-from-here):*** What might a next step be? Do it in another presentation?
 
@@ -441,11 +443,7 @@ This is a very cursory overview of the tools I will use in this current simple p
 
 ***How will I use the tools to create "provably correct" and bulletproof software?***
 
-I have yet to come up with a satisfactory name for this development technique that really captures its essence from a behavioral point of view.
-
-The traditional name (if such can be said of a term that was recently coined) is [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). It is a set of decades old practices bundled under a catchy new name, but more importantly, with support for it baked into most software development environments these days. For example, see Pytest in the Tools section of this doc.
-
-The basic idea is: when developing a unit of code, break the overall requirement(s) for the unit into "micro-goals" *(my term)*, and achieve those goals quickly and provably in code. Once the coding is done, keep the "test" for the unit as part of a suite of tests to confirm that functioning of the entire system whenever there is a change or a problem.
+To set the stage: the code for this initial phase of development will have already been developed up to a point. The demo will complete the functionality for this phase (I hope) in a manner that illustrates the [Critical Development Techniques](#critical-development-techniques).
 
 ## The Code Project
 
