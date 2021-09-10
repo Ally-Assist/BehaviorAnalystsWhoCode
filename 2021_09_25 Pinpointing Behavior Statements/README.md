@@ -310,7 +310,7 @@ The model is the core engine of an application. This is where the main logic and
 
 The primary user user for a model is generally a programmer, and the interface is an [application programming interface (API)](https://en.wikipedia.org/wiki/API). The end user interface is built upon the model, perhaps through other intervening layers of software.
 
-### Functional model: as simulation
+### Functional model: a process simulation
 
 The model owns, encapsulates, protects, provides access to, all data. The model provides all behaviors that affect the internal state of the model, and which provide services to the "outside world".
 
