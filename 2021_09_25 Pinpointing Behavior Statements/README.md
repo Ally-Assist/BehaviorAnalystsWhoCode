@@ -39,7 +39,7 @@ Such "workshops" would include online participation by attendees, including taki
 
 ### Presentation Constraints
 
-The basic drivers in developing the presentation will be:
+The basic drivers for this presentation will be:
 
 1. Wide ranging software development skills of the audience.
 
