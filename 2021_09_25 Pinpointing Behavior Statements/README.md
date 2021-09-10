@@ -19,7 +19,7 @@ Created: Sunday 22 August 2021
 
 I will provide a quick overview of some basic software development concepts, tools, and processes. 
 
-There is a ***lot*** of material here. Much of the presentation will be very shallow, but links are provided throughout this "readme" page to more in-depth information.
+There is a ***lot*** of material here. This document is intended as a resource to be read before or after the session. I will cover this material very briefly, but links are provided throughout as a guide to more in-depth information.
 
 In light of the ever increasing importance of software in all aspects of life, including in behavior analysis, my major goals:
 
