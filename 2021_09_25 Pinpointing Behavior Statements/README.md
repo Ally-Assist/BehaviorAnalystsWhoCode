@@ -129,7 +129,7 @@ This technique is generally some combination of [design by contract](https://en.
 
 ##### The Contract: Antecedents
 
-The idea here is to clearly specify a the conditions for calling a function (method, message, procedure, whatever), and the consequences of doing so correctly or incorrectly:
+The idea here is to clearly specify the conditions for calling a function (method, message, procedure, whatever), and the consequences of doing so correctly or incorrectly:
 
 1. the environment in which a piece of code may be used (e.g, in terms of previous actions);
 
@@ -289,7 +289,7 @@ Which raises the issue of breaking software up into manageable units with well d
 
 3. [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring). For example: [rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)).
 
-## Design Pattern: MVC
+### Design Pattern: MVC
 
 The most common, and most basic, application software design pattern over the past few decades is known as [model-view-controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller).  It goes hand-in-hand with [object oriented programming](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f), and seems to originate with the development of the [Smalltalk language](https://en.wikipedia.org/wiki/Smalltalk) in the late 1960s.
 
@@ -300,7 +300,7 @@ The most common, and most basic, application software design pattern over the pa
 **The "C" is the controller**, or set of controllers. *It is part of the user interface.* Controllers allow you to talk to the model, tell it what to do. Things like buttons, sliders, text boxes.
 
 
-## Model: The behaving organism
+### Model: The behaving organism
 
 The model is the "M" in "MVC".
 
@@ -310,7 +310,7 @@ The model is the core engine of an application. This is where the main logic and
 
 The primary user user for a model is generally a programmer, and the interface is an [application programming interface (API)](https://en.wikipedia.org/wiki/API). The end user interface is built upon the model, perhaps through other intervening layers of software.
 
-### Functional model: a process simulation
+##### Functional model: a process simulation
 
 The model owns, encapsulates, protects, provides access to, all data. The model provides all behaviors that affect the internal state of the model, and which provide services to the "outside world".
 
@@ -324,7 +324,7 @@ The model defines:
 
 3. The values returned in response to the request, if any.
 
-### Structural data model: the proverbial "Dead Man"
+##### Structural data model: the proverbial "Dead Man"
 
 Besides behavior, the model includes data, which is the internal state of the organism, its "guts". These guts are part of the functional model, but are frequently externalized as a storage format, such as a [relational database entity-relationship model](https://en.wikipedia.org/wiki/Entity–relationship_model).
 
@@ -332,7 +332,7 @@ The data model only defines a bare outline of the data items in the model, and t
 
 That is, the data model is structural; the overall model is functional.
 
-## View-Controller: The User Interface
+### View-Controller: The User Interface
 
 This is the "VC" in "MVC".
 
@@ -411,7 +411,7 @@ Program defensively.
 
 There is a very large number of choices among development tools. I will focus on the ones that I use, and which serve well in a "pro" environment. But the choice of tools is often dictated by an organization. When there are no mandates, then the choices tend to be very personal.
 
-## Current Phase
+### Current Phase
 
 This is a very cursory overview of the tools I will use in this current simple prototype. They are also the tools I use the most in any Python project. 
 
@@ -435,7 +435,7 @@ This is a very cursory overview of the tools I will use in this current simple p
 
 4. ***Others:*** As the project progresses, other Python packages will be pulled in for specific purposes. A rule in Python, and many other languages, is that before designing and writing new code, check to see what is available first. There is a large quantity of high quality free code available through the [Python Package Index (PyPI)](https://pypi.org). PyCharm has [facilities that make adding such packages very very easy](https://www.jetbrains.com/help/pycharm/installing-uninstalling-and-upgrading-packages.html) (this is also a typical IDE feature).
 
-## Future Directions
+### Future Directions
 
 1. ***[Doxygen](https://www.doxygen.nl/index.html):*** Probably the most popular documentation generator, ever. As long as you follow certain minimal language specific commenting practices, you can generate "online" for your code. The tool is a bit clunky, but so useful that it remains popular. Example: [Documenting Python Programs With Doxygen](https://www.woolseyworkshop.com/2020/06/25/documenting-python-programs-with-doxygen/#ViewingTheGeneratedDocumentation)
 
@@ -456,7 +456,7 @@ This is a very cursory overview of the tools I will use in this current simple p
 
 To set the stage: the code for this initial phase of development will have already been developed up to a point. The demo will complete the functionality for this phase (I hope) in a manner that illustrates the [Critical Development Techniques](#critical-development-techniques).
 
-## The Code Project
+### The Code Project
 
 Resources specific to this project:
 
@@ -467,14 +467,14 @@ Resources specific to this project:
 - The PyCharm Python source code is *(will be)* here: [source](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements/source)
 
 
-## The Model
+### The Model
 
 
 
 ***TO BE DONE***
 
 
-## Main Demo
+### Main Demo
 
 Most of the code will already exist as a Python in the [project repository](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements/source).
 
@@ -494,7 +494,7 @@ I will leave at least one critical model component, and one view-controller comp
 
 3. Once the project is error free, the test coverage analyzer will be run.
 
-## Optional
+### Optional
 
 Assuming Ryan Cole is present, Ryan and I may demonstrate "[paired programming](https://martinfowler.com/articles/on-pair-programming.html)", which might better be thought of as cooperative problem solving.
 
