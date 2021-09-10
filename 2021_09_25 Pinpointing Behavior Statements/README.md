@@ -19,13 +19,15 @@ Created: Sunday 22 August 2021
 
 I will provide a quick overview of some basic software development concepts, tools, and processes. Much of the presentation will be very shallow, but links are provided throughout this "readme" page to more in-depth information.
 
-In light of the every increasing importance of software in all aspects of life, including in behavior analysis, my major goals:
+In light of the ever increasing importance of software in all aspects of life, including in behavior analysis, my major goals:
 
 1. Foster a deeper understanding of software development among behavior analysts to facilitate their own coding as well as make their interactions with professional software development groups more effective. 
 
-2. Call out important aspects of software development and leave a trail of breadcrumbs (i.e., links and terms) to act as entry points to a deeper understanding for those who care to pursue them.
+1. Contribute to the continuing development of an ecosystem of software development aware behavior analysts.
 
-3. Contribute to the "behavioralization" of software development. I will strive to explain practices in behavioral terms, at least for some software development practices. The most productive practices *should* make sense from a behavior analytic perspective. 
+1. Call out important aspects of software development and leave a trail of breadcrumbs (i.e., links and terms) to act as entry points to a deeper understanding for those who care to pursue them.
+
+1. Contribute to the "behavioralization" of software development. I will strive to explain practices in behavioral terms, at least for some software development practices. The most productive practices *should* make sense from a behavior analytic perspective. 
 
 ### Future Presentations
 
