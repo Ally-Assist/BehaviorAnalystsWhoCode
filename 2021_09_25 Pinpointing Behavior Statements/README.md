@@ -155,7 +155,7 @@ There are two primary ways to enforce the rules:
 
 1. Throw an informative error that may be "caught" and handled. You would generally do this in the case of a runtime error that might not be under the control of the programmer calling your code. For example, a file has gone missing.
 
-2. Deliberately crash the program (that is, "assert fail"). Generally, you do this if you consider the situation to be a simple programming error that should be corrected by the programmer calling your code. For example, you have specified that an argument, such as `first_name` must be supplied, but the programmer called your code with a null/None value for `fist_name`.
+2. Deliberately crash the program (that is, "assert fail"). Generally, you do this if you consider the situation to be a simple programming error that should be corrected by the programmer calling your code. For example, you have specified that an argument, such as `first_name` must be supplied, but the programmer called your code with a no value for `fist_name`.
 
 This is complicated by the fact that different languages use different conventions with regard to "production" code versus "debug" code. Generally, "assert fails" are NOT included in production code, but errors (a.k.a., exceptions) are. This makes sense when you consider that most code calling issues will occur in development, and by the time you put a code out for other people to use, there ***should*** be few if any coding errors, only runtime resource errors.
 
