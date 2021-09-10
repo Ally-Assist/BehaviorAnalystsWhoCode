@@ -293,6 +293,12 @@ Which raises the issue of breaking software up into manageable units with well d
 
 The most common, and most basic, application software design pattern over the past few decades is known as [model-view-controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller).  It goes hand-in-hand with [object oriented programming](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f), and seems to originate with the development of the [Smalltalk language](https://en.wikipedia.org/wiki/Smalltalk) in the late 1960s.
 
+**The "M" is the model**, in the sense of modeling or simulating some active process, mechanism, or organism.
+
+**The "V" is the view**, or set of views. *It is part of the user interface.* Views allow you to see aspects of the model. If you can see something in a software application, you are looking at views. It is how the model talks to you. Things like text and images.
+
+**The "C" is the controller**, or set of controllers. *It is part of the user interface.* Controllers allow you to talk to the model, tell it what to do. Things like buttons, sliders, text boxes.
+
 ## Model: The behaving organism
 
 The model is the "M" in "MVC".
@@ -326,6 +332,8 @@ The data model only defines a bare outline of the data items in the model, and t
 That is, the data model is structural; the overall model is functional.
 
 ## View-Controller: The User Interface
+
+This is the "VC" in "MVC".
 
 In our case, the "view-controller" components of the MVC pattern will be combined into a simple [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface). This intermixing is pretty standard, unless you are the person who is developing the individual "views" and "controllers" (and sometimes even then).
 
