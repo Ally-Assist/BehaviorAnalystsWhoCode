@@ -27,7 +27,7 @@ In light of the ever increasing importance of software in all aspects of life, i
 
 1. Call out important aspects of software development and leave a trail of breadcrumbs (i.e., links and terms) to act as entry points to a deeper understanding for those who care to pursue them.
 
-1. Contribute to the "behavioralization" of software development. I will strive to explain practices in behavioral terms, at least for some software development practices. The most productive practices *should* make sense from a behavior analytic perspective. 
+1. Contribute to the "behavioralization" of software development. I will strive to explain a few practices in behavioral terms. The most productive practices *should* make sense from a behavior analytic perspective. I may need help here. Applied behavior analytic research is needed here.
 
 ### Future Presentations
 
