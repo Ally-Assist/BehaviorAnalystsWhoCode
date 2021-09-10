@@ -76,14 +76,22 @@ For those who are ***really really*** interested, it would be useful to at least
 
 # Critical Development Techniques
 
-There are two development techniques that changed my life as a software developer when I was "forced" to start using them. They are techniques that are rarely, if ever, taught in computer science classes. They are interrelated, but each has a different target population.
+I am making up my own "behavioralized" names for these techniques, but will, of course, tie them back to the more standard software development names (such as there are). Please suggest better terms.
+
+These are two development techniques that changed my life as a software developer when I was "forced" to start using them. They are techniques that are rarely, if ever, taught in computer science classes. They are interrelated, but each has a different target population. After using them, my reaction was, "How did I ever develop software without this?"
+
+1. Continuous Implementation Feedback. The target population is developers ***implementing*** a unit of functionality.
+
+1. Clear User Expectations. The target population is other developers ***using*** a unit of functionality.
+
+As for all software development practices, whether and how they are performed are very idiosyncratic to the organization, team, individual.
 
 I will give examples of both in the demo, but first, a preview here.
 
 
-### Continuous Feedback Driven Development
+### Continuous Implementation Feedback
 
-The term "Continuous Feedback Driven Development" is a behavioralization. The technique is actually known within the software development community as [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). 
+The term "Continuous Implementation Feedback" is a behavioralization. The technique is actually known within the software development community as [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). 
 
 The primary features of this technique are:
 
@@ -109,9 +117,7 @@ The process results in two work products:
 
 2. The unit test(s) form a suite of tests that can be run at any time. This is critical because any change to one object can affect any number of other objects in completely unexpected ways. Bugs happen, where "bug" is a programmer error. The classic lament after an application stops working is, "I only changed a comment!" The entire suite of unit tests MUST be run and PASSED before sharing code.
 
-### Clear Usage Expectations
-
-***This technique will be part of the live demo.***
+### Clear User Expectations
 
 This technique is generally some combination of [design by contract](https://en.wikipedia.org/wiki/Design_by_contract) and [defensive programming](https://en.wikipedia.org/wiki/Defensive_programming). 
 
@@ -135,7 +141,7 @@ On the other hand, you have no idea when it will be called, by whom, or where it
 
 ##### Implementation of Consequences
 
-The contract is text that attempts to set the occasion for certain behaviors on the part of the software developer. But it is just text. Something must implement the specified contingencies. 
+The contract (above) is text that attempts to set the occasion for certain behaviors on the part of the software developer. But it is just text. Something must implement the specified contingencies. 
 
 As described in the linked pages on design by contract and defensive programming, your code must implement the contingencies. There are various ways to do this, some of which will be illustrated in the demo.
 
