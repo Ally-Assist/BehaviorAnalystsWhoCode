@@ -437,9 +437,9 @@ This is a very cursory overview of the tools I will use in this current simple p
 
 ---
 
-# Demo: Continuous-Feedback Development
+# Demo: Correct and Bulletproof
 
-***How will I use the tools to create "provably correct" software?***
+***How will I use the tools to create "provably correct" and bulletproof software?***
 
 I have yet to come up with a satisfactory name for this development technique that really captures its essence from a behavioral point of view.
 
