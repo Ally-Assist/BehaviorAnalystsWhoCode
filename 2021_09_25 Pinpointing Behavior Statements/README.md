@@ -194,6 +194,8 @@ The general criteria. For a statement to describe a behavior, for our purposes, 
 
 4. Neutral: Non-biased, non-judgmental, non-emotional.
 
+### Pinpointing Articles
+
 A few relevant articles:
 
 1. A "must read" by Critchfield and Shue: [The Dead Man Test: a Preliminary Experimental Analysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6269387/pdf/40617_2018_Article_239.pdf)
@@ -235,7 +237,7 @@ But if we were to carry the project through, one possible finished system:
 
 ***How to break it down into digestible chunks?***
 
-### Resources
+### Development Resources
 
 The main problem in developing such an application is, as always, resources: 
 
@@ -255,7 +257,7 @@ In this demo resources are especially constrained.
 
 Thus, I will break the development down into excruciatingly small chunks.
 
-1. This phase: develop a basic "model" (see below).
+1. This phase: develop a very basic "model" (see below).
 
 2. Second: add a basic desktop GUI ("view controllers") for interaction.
 
