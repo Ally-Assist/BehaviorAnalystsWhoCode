@@ -28,9 +28,9 @@ I have my local work directories for GitHub repositories under my home directory
 
 Here is what I did:
 
-1. I installed the [latest version of Python](https://www.python.org/downloads/), which was v3.9 something at the time. Today it is v3.9.7.
+1. Updated to the [latest version of Python](https://www.python.org/downloads/), which was v3.9.7.
 
-1. Start PyCharm
+1. Started PyCharm
 
 1. In the `File` menu, select `New Project...`
 
@@ -52,4 +52,16 @@ Here is what I did:
 
 1. Set up the Python interpreter.
 
-	1. 
+	1. Under `Location` you should see `Python Interpreter`.
+	
+	1. There should be a couple of choices under it, click the little triangle just on the left of `Python Interpreter`
+	
+	1. Choose `New environment using`, then choose `Pipenv` from the pulldown menu.
+	
+	1. From the pulldown menu for `Base interpreter`, select the most recent version of Python.
+
+1. Click the `Create` button at the bottom right of the dialog.
+
+1. If you look at the contents of the `source` directory, you will now find a hidden folder named `.idea`. This is the folder in which PyCharm saves all of its settings for your project. If you delete the `.idea` directory you will have to completely reconfigure the project. Now a big deal now, but later ...
+
+1. At this point you will just need to explore a bit on your own to find your way around. Here is a good starting point: [PyCharm: Overview of the user interface](https://www.jetbrains.com/help/pycharm/guided-tour-around-the-user-interface.html)
