@@ -62,7 +62,7 @@ Here is what I did:
 
 1. Click the `Create` button at the bottom right of the dialog.
 
-1. If you look at the contents of the `source` directory, you will now find a hidden folder named `.idea`. This is the folder in which PyCharm saves all of its settings for your project. If you delete the `.idea` directory you will have to completely reconfigure the project. Now a big deal now, but later ...
+1. If you look at the contents of the `source` directory, you will now find a hidden folder named `.idea`. This is the folder in which PyCharm saves all of its settings for your project. If you delete the `.idea` directory you will have to completely reconfigure the project. Not a big deal now, but later ...
 
 1. At this point you will just need to explore a bit on your own to find your way around. Here is a good starting point: [PyCharm: Overview of the user interface](https://www.jetbrains.com/help/pycharm/guided-tour-around-the-user-interface.html)
 
