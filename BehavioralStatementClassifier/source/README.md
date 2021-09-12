@@ -66,3 +66,25 @@ Here is what I did:
 
 1. At this point you will just need to explore a bit on your own to find your way around. Here is a good starting point: [PyCharm: Overview of the user interface](https://www.jetbrains.com/help/pycharm/guided-tour-around-the-user-interface.html)
 
+
+# BehavioralStatementClassifier Package
+
+A [Python package](https://docs.python.org/3/tutorial/modules.html#packages) is code module that can be referenced by name, usually as a means of importing functionality. Our top level package will be `BehavioralStatementClassifier`. 
+
+1. In PyCharm open `BehaviorStatementClassifier`. All files under the [main project directory](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/BehavioralStatementClassifier) will be present.
+
+1. Create the top level Python package by selecting the `source` directory in the PyCharm navigator, and control-click that `source` directory. Choose `New>Python Package`. Type `BehavioralStatementClassifier`. This is the top level Python "library". The `source` directory should have a sub-directory named `BehavioralStatementClassifier`, and there should be a file under that directory named `__init__.py`. We will ignore the file, for now.
+
+Within the `BehavioralStatementClassifier` package we will have at least two sub-packages that can be used by name:
+
+1. ***Model:*** The guts of the application, as described above as the "M" in "MVC".
+
+1. ***DesktopGui:*** A desktop graphical user interface. This will be one possible set of view controllers, the "VC" in "MVC". We will create this package, but leave it empty for now.
+
+I leave this up to you. Creating a package under an existing package follows the same process as above, except that you create the sub-packages under `BehavioralStatementClassifier` instead of `source`.
+
+# End, for now.
+
+
+
+
