@@ -15,11 +15,20 @@ Created: Sunday 22 August 2021
 
 ---
 
-# Overview
+# Overview: Software Development as a Team Activity
 
-I will provide a quick overview of some basic software development concepts, tools, and processes. 
 
-There is a ***lot*** of material here. This document is intended as a resource to be read before or after the session. I will cover this material very briefly, but links are provided throughout as a guide to more in-depth information.
+Contrary to common myth, software development is primarily a team activity. The most critical software development skill is "plays well with others". 
+
+That is not to say that solo efforts are not important. They are. Many, if not most, exploratory coding is solo. For example, this solo project demo project that was done primarily to explore a possible way to facilitate learning about the [Donahoe, Burgos, Palmer (DBP) selectionist neural network model](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1322144/pdf/jeabehav00003-0019.pdf): 
+
+• [BGL2015 Visualizer](https://basimulation.org/bgl2015-visualizer/)
+
+But creating software useful to a broader audience, and more generally applicable, requires a team. There is too much work required to produce software that actually works reliably, and then to maintain it and support users. More than one person is generally required, and these people must work together without stepping all over each other.
+
+The focus of this presentation will be a few software development techniques and tools that support teamwork. I will talk about and demo some basic infrastructure for working together, but does not address the behavioral aspects of teamwork. That is more up to you, behavior analysts.
+
+There is a ***lot*** of material here. Consider this to be primarily a "survey" that will give you some broad notion of the lay of the land, and the specifics of a couple of areas. This document is a self study guide. This document is intended as a resource to be read before or after the session. I will cover this material very briefly, but links are provided throughout as a guide to more in-depth information.
 
 In light of the ever increasing importance of software in all aspects of life, including in behavior analysis, my major goals:
 
