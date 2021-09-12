@@ -26,7 +26,9 @@ That is not to say that solo efforts are not important. They are. Many, if not m
 
 But creating software useful to a broader audience, and more generally applicable, requires a team. There is too much work required to produce software that actually works reliably, and then to maintain it and support users. More than one person is generally required, and these people must work together without stepping all over each other.
 
-The focus of this presentation will be a few software development techniques and tools that support teamwork. I will talk about and demo some basic infrastructure for working together, but does not address the behavioral aspects of teamwork. That is more up to you, behavior analysts.
+The focus of this presentation will be a few software development techniques and tools that support teamwork. I will talk about and demo some basic infrastructure for working together, but does not address the behavioral aspects of teamwork. That is more up to you, behavior analysts.f
+
+### How to use this document
 
 There is a ***lot*** of material here. Consider this to be primarily a "survey" that will give you some broad notion of the lay of the land, and the specifics of a couple of areas. This document is a self study guide. This document is intended as a resource to be read before or after the session. I will cover this material very briefly, but links are provided throughout as a guide to more in-depth information.
 
@@ -40,13 +42,13 @@ In light of the ever increasing importance of software in all aspects of life, i
 
 1. Contribute to the "behavioralization" of software development. I will strive to explain a few practices in behavioral terms. The most productive practices *should* make sense from a behavior analytic perspective. I may need help here. Applied behavior analytic research is needed here.
 
-### Future Presentations
+### Future presentations
 
 If participants are interested, the project may be continued in future Saturday workshops outside the usual [Behavior Analysts Who Code (BAWC)](https://www.codingbehavioranalysts.org) meetup schedule. Again, the purpose is to promote software development skills within the behavior analytic community. It might even result in software that is useful to the behavior analysis community, owned by the behavior analysis community. 
 
 Such "workshops" would include online participation by attendees, including taking part in writing and debugging code (e.g., see "[pair programming](https://en.wikipedia.org/wiki/Pair_programming)"). Ideally, the process would evolve to include Behavior Analysts Who Code members taking ownership of parts of the app, working offline (perhaps in pairs), presenting to the "team", and guiding online collaborative, cooperative, work.
 
-### Presentation Constraints
+### Presentation constraints
 
 The basic drivers for this presentation will be:
 
@@ -63,7 +65,7 @@ The basic drivers for this presentation will be:
 3. The "software development project" must be in some way relevant to behavior analysis. In this case: classification of textual statements as behavioral (or not).
 
 
-### General Format
+### General format
 
 Duration of the presentation: 60 minutes, max. At least half of that will be live demo and questions/discussion. Of course, if there are no question, the presentation will be shorter.
 
