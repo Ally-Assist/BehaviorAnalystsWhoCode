@@ -106,7 +106,7 @@ As for all software development practices, whether and how they are performed ar
 I will give examples of both in the demo, but first, a preview here.
 
 
-### Continuous Implementation Feedback
+### Continuous implementation feedback
 
 The term "Continuous Implementation Feedback" is a behavioralization. The technique is actually known within the software development community as [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). 
 
@@ -136,13 +136,13 @@ The process results in two work products:
 
 2. The unit test(s) form a suite of tests that can be run at any time. This is critical because any change to one object can affect any number of other objects in completely unexpected ways. Bugs happen, where "bug" is a programmer error. The classic lament after an application stops working is, "I only changed a comment!" The entire suite of unit tests MUST be run and PASSED before sharing code.
 
-### Clear User Expectations
+### Clear user expectations
 
 This technique is generally some combination of [design by contract](https://en.wikipedia.org/wiki/Design_by_contract) and [defensive programming](https://en.wikipedia.org/wiki/Defensive_programming). 
 
 With respect to teamwork: this technique provides guarantees to your team members, or anyone who uses your code, regarding its behavior under conditions that you, as the developer of a unit of code, specify. You say: do this before calling this code; call it with these arguments; and here is what I will do for you. You are also guaranteeing that if the person using your code does not follow the rules, your code will not give a pass, but will throw an error of some sort.
 
-##### The Contract: Antecedents
+##### The Contract: antecedents
 
 The idea here is to clearly specify the conditions for calling a function (method, message, procedure, whatever), and the consequences of doing so correctly or incorrectly:
 
@@ -160,7 +160,7 @@ In private functions, you control how the function is called (because it is your
 
 With public code, on the other hand, you have no control over its usage. You cannot known when it will be called, by whom, or where it will be called. Thus, either you must be prepared to handled any and all circumstances, ***or*** you can limit the scope of what you must consider by specifying the "three term contingency" for a method call. This is the contract described above.
 
-##### Implementation of Consequences
+##### Implementation of consequences
 
 The contract (above) is text that attempts to set the occasion for certain behaviors on the part of the software developer. But it is just text. Something must implement the specified contingencies. 
 
@@ -195,7 +195,7 @@ Thus, the issue/setting being addressed by the statements would have to be ident
 
 Besides the general need of classifying behaviors, we also want to collect data that will support efforts to improve the entire process: train users to classify statements; the criteria used in classifying statements; the explanations of the criteria; how the user interacts with the system; and so on.
 
-### General Need
+### General need
 
 Would like software that would facilitate the process of training people to do the classification, and to collect classifications of large volumes of behavior statements.
 
@@ -209,7 +209,7 @@ For a statement to describe a behavior, for our purposes, the statement must mee
 
 4. Neutral: Non-biased, non-judgmental, non-emotional.
 
-### Pinpointing Articles
+### Articles on pinpointing
 
 A few relevant articles:
 
@@ -219,7 +219,7 @@ A few relevant articles:
 
 3. [Vital Behaviors](https://sourcesofinsight.com/vital-behaviors/)
 
-### Main Data Collection Need
+### Main data collection need
 
 There are two main use cases relating to data collection:
 
@@ -231,7 +231,7 @@ It is a classic "chicken and egg" problem: to train users to classify, we need a
 
 We will start with the most basic requirement: collecting classification ratings by user. One possible procedure would be to have a group of users do classifications until there is a high inter-rater agreement on a large percentage of the statements, say, 95% agreement on ratings of statements. Should probably also have some fluency requirement, or at least require some steady state for latencies, inter-response times, overall rates.
 
-### Final Product
+### Final product
 
 There are literally infinite directions we could take in future versions. A combinatorial explosion of features.
 
@@ -252,7 +252,7 @@ But if we were to carry the project through, one possible finished system:
 
 ***How to break it down into digestible chunks?***
 
-### Development Resources
+### Development resources, people
 
 The main problem in developing such an application is, as always, resources: 
 
@@ -280,7 +280,7 @@ Thus, I will break the development down into excruciatingly small chunks.
 
 4. And so on.
 
-### Potential Future Phases
+### Potential future phases
 
 If the project garners interest among the Behavior Analysts Who Code community, then we may continue it in later sessions. Ideally, members of the community would volunteer to help with coding, test data, data collection, and analysis.
 
