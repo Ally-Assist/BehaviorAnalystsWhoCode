@@ -20,7 +20,7 @@ Created: Sunday 22 August 2021
 
 Contrary to common myth, software development is primarily a team activity. The most critical software development skill is "plays well with others". 
 
-That is not to say that solo efforts are not important. They are. Many, if not most, exploratory coding is solo. For example, this solo project demo project that was done primarily to explore a possible way to facilitate learning about the [Donahoe, Burgos, Palmer (DBP) selectionist neural network model](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1322144/pdf/jeabehav00003-0019.pdf): 
+That is not to say that solo efforts are not important. They are. Many, if not most, exploratory coding is solo. For example, this solo demo project that was done primarily to explore a possible way to facilitate learning about the [Donahoe, Burgos, Palmer (DBP) selectionist neural network model](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1322144/pdf/jeabehav00003-0019.pdf): 
 
 • [BGL2015 Visualizer](https://basimulation.org/bgl2015-visualizer/)
 
