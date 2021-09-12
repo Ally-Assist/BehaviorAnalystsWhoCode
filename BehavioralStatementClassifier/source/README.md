@@ -2,7 +2,7 @@
 
 Python project under PyCharm for a presentation on Sunday 25 September 2021 @ 12:00 to the Slack channel, [Behavior Analysts Who Code (BAWC)](https://www.codingbehavioranalysts.org)
 
-For an overview of the project and the demo, see the [README.md](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements) one level up.
+For an overview of the project and the demo, see the [README.md](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/BehavioralStatementClassifier) one level up.
 
 ***This will change frequently up to the presentation date***
 
@@ -24,7 +24,7 @@ Install the free [Community version of PyCharm](https://www.jetbrains.com/pychar
 
 I have my local work directories for GitHub repositories under my home directory. The full path to the project folder for this project is:
 
-	"LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/2021_09_25 Pinpointing Behavior Statements"
+	~/LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/BehavioralStatementClassifier
 
 Here is what I did:
 
