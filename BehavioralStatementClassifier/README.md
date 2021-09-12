@@ -108,6 +108,8 @@ I will give examples of both in the demo, but first, a preview here.
 
 The term "Continuous Implementation Feedback" is a behavioralization. The technique is actually known within the software development community as [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). 
 
+With respect to "teamwork", the technique is very important in quickly (relatively) producing working code, and sharing it with team members. A project in which team members do their share of the work, and do not interfere needlessly with other team members, is more likely to succeed than if team members trip each other up. Before sharing code, ***the code itself must provably work, and it must work with the code of the other team members***.
+
 The primary features of this technique are:
 
 1. Define requirements for a unit of functionality.
@@ -135,6 +137,8 @@ The process results in two work products:
 ### Clear User Expectations
 
 This technique is generally some combination of [design by contract](https://en.wikipedia.org/wiki/Design_by_contract) and [defensive programming](https://en.wikipedia.org/wiki/Defensive_programming). 
+
+With respect to teamwork: this technique provides guarantees to your team members, or anyone who uses your code, regarding its behavior under conditions that you, as the developer of a unit of code, specify. You say: do this before calling this code; call it with these arguments; and here is what I will do for you. You are also guaranteeing that if the person using your code does not follow the rules, your code will not give a pass, but will throw an error of some sort.
 
 ##### The Contract: Antecedents
 
@@ -414,7 +418,7 @@ There is a very large number of choices among development tools. I will focus on
 
 This is a very cursory overview of the tools I will use in this current simple prototype. They are also the tools I use the most in any Python project. 
 
-1. ***[PyCharm](https://www.jetbrains.com/pycharm/):*** This is a full featured [integrated development environment (IDE)](https://en.wikipedia.org/wiki/Integrated_development_environment). It includes editors, project management (technical, not business admin), debuggers, and so on. 
+1. ***[PyCharm](https://www.jetbrains.com/pycharm/):*** This is a full featured [integrated development environment (IDE)](https://en.wikipedia.org/wiki/Integrated_development_environment). It includes editors, project management (technical, not business admin), debuggers, and so on. EVERYONE on a team must use the same development environment (as practical) to avoid needless incompatibilities and and conflicts.
 
 	1. As for many such "pro" level tools, it is highly customizable. It makes complex tasks easy (and some would say, vice versa). 
 	
@@ -422,7 +426,7 @@ This is a very cursory overview of the tools I will use in this current simple p
 	
 	3. The free "community version" is very capable. If you do use it on a continual basis, you may find that there are features that require the paid version. The individual license is very reasonable: $89/year. 
 
-2. ***[GitHub](https://github.com/):*** GitHub is an online means of sharing *versioned* project materials. It is one of the many cloud versions of the popular [git source control system](https://git-scm.com). It has features to support parallel work on the code by different team members and even separate teams in a controlled, yet flexible manner.
+2. ***[GitHub](https://github.com/):*** GitHub is an online means of sharing *versioned* project materials. It is one of the many cloud versions of the popular [git source control system](https://git-scm.com). It has features to support parallel work on the code by different team members and even separate teams in a controlled, yet flexible manner. Version control systems are how developer can work on the same code without destroying each other's work.
 
 	1. This is where the materials for this presentation are stored: [Ally-Assist/For-BehaviorAnalystsWhoCode](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/2021_09_25%20Pinpointing%20Behavior%20Statements). If you are reading this online, you are probably already on the GitHub site.
 	
@@ -430,7 +434,7 @@ This is a very cursory overview of the tools I will use in this current simple p
 	
 	3. You ***CAN*** use command line tools, but I do not. If you have to ask what a command line tool is, then command line tools are probably not well suited to your purposes. Instead, try [GitHub Desktop](https://desktop.github.com). 
 
-3. ***[PyTest](https://docs.pytest.org/):*** PyTest is a testing framework that is integrated into the PyCharm environment. There are other testing tools that could be used with PyCharm, but PyTest is the one that I use. I call it out because the demo, [Demo: Correct and Bulletproof](#demo-correct-and-bulletproof), is based on PyTest. Note that most "pro" level development environments will have [some sort of testing framework](https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks).
+3. ***[PyTest](https://docs.pytest.org/):*** PyTest is a testing framework that is integrated into the PyCharm environment. There are other testing tools that could be used with PyCharm, but PyTest is the one that I use. I call it out because the demo, [Demo: Correct and Bulletproof](#demo-correct-and-bulletproof), is based on PyTest. Note that most "pro" level development environments will have [some sort of testing framework](https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks). TDD is your friend. It tells you when you have accomplished your goals, and when it is safe to share your code.
 
 4. ***Others:*** As the project progresses, other Python packages will be pulled in for specific purposes. A rule in Python, and many other languages, is that before designing and writing new code, check to see what is available first. There is a large quantity of high quality free code available through the [Python Package Index (PyPI)](https://pypi.org). PyCharm has [facilities that make adding such packages very very easy](https://www.jetbrains.com/help/pycharm/installing-uninstalling-and-upgrading-packages.html) (this is also a typical IDE feature).
 
@@ -445,6 +449,10 @@ This is a very cursory overview of the tools I will use in this current simple p
 1. ***[Matplotlib](https://matplotlib.org):*** Graphing. [Examples](https://matplotlib.org/stable/gallery/index.html)
 
 1. ***[Pandas](https://pandas.pydata.org/docs/index.html):*** Data analysis tools. If we use Pandas, it will most likely be for its [DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html) which can read from the SQLite database, and which can be fed to Matplotlib graphing objects.
+
+1. ***[Desktop Python GUI with Tkinter](https://docs.python.org/3/library/tk.html):*** Bare bones GUI library generally included in Python. 
+
+1. ***[Web/Browser Python GUIs](https://hackr.io/blog/flask-vs-django):*** The two primary choices for developing a web app in Python.
 
 
 ---
