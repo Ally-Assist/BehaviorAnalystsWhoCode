@@ -294,7 +294,9 @@ This may only ever be a toy application. It may not be useful to anyone. But, it
 
 Software components may go by many names. We will focus on objects, as in [Object-Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming).
 
-The following [software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern) will guide the overall structure of the application. While most [end users](https://en.wikipedia.org/wiki/End_user) picture an application as a [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface), the reality is generally quite different.
+Software development is generally guided by [software design patterns](https://en.wikipedia.org/wiki/Software_design_pattern). But they are a bit like patterns in sewing: everyone adapts them to their needs.
+
+The following pattern will guide the overall structure of the application. While most [end users](https://en.wikipedia.org/wiki/End_user) picture an application as a [graphical user interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface), the reality is generally quite different.
 
 Which raises the issue of breaking software up into manageable units with well defined responsibilities. This process goes by many names, including:
 
@@ -304,7 +306,7 @@ Which raises the issue of breaking software up into manageable units with well d
 
 3. [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring). For example: [rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)).
 
-### Design Pattern: MVC
+### Design pattern: MVC
 
 The most common, and most basic, application software design pattern over the past few decades is known as [model-view-controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller).  It goes hand-in-hand with [object oriented programming](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f), and seems to originate with the development of the [Smalltalk language](https://en.wikipedia.org/wiki/Smalltalk) in the late 1960s.
 
