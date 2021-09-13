@@ -31,8 +31,8 @@
 # ##############################################################################
 
 
-
-
+from Model.Statement import Statement
 
 class TestStatement:
-    pass
+
+    def test_constructor

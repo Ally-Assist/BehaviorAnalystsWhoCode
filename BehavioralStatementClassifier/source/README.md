@@ -83,6 +83,22 @@ Within the `BehavioralStatementClassifier` package we will have at least two sub
 
 I leave this up to you. Creating a package under an existing package follows the same process as above, except that you create the sub-packages under `BehavioralStatementClassifier` instead of `source`.
 
+Now, we need to correctly identify the top level content (source) of the project.
+
+1. In project preferences (Cmd-, on Mac), 
+
+1. under Project > Project Structure, 
+
+1. delete whatever content root is shown on the right (click the 'x' on the far right). 
+
+1. Click `Add Content Root`, and navigate to the top level package directory, `BehavioralStatementClassifier`. 
+
+1. Click open. 
+
+Python import statements should now find the modules of the project.
+
+
+
 # End, for now.
 
 
