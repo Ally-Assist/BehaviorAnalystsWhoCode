@@ -162,6 +162,50 @@ Be sure these PyTest packages are installed. See Preferences (i.e., Cmd-,) under
 1. pytest-xdist
 
 
+Do this command in the terminal window to run all of your tests in parallel:
+
+	>pytest -n auto
+	
+You should see output something like this, which shows no errors:
+
+	====================================================================================================================== test session starts ======================================================================================================================
+	platform darwin -- Python 3.9.7, pytest-6.2.5, py-1.10.0, pluggy-1.0.0
+	rootdir: /Users/tompadonaldson/LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/BehavioralStatementClassifier/source/BehavioralStatementClassifier
+	plugins: cov-2.12.1, xdist-forked-0.0.1, forked-1.3.0
+	gw0 [1] / gw1 [1] / gw2 [1] / gw3 [1] / gw4 [1] / gw5 [1] / gw6 [1] / gw7 [1] / gw8 [1] / gw9 [1] / gw10 [1] / gw11 [1] / gw12 [1] / gw13 [1] / gw14 [1] / gw15 [1] / gw16 [1] / gw17 [1] / gw18 [1] / gw19 [1] / gw20 [1] / gw21 [1] / gw22 [1] / gw23 [1]
+	.                                                                                                                                                                                                                                                         [100%]
+	======================================================================================================================= 1 passed in 2.54s =======================================================================================================================
+
+
+
+Run this command in the terminal window to see how much of your code is covered by the tests you have so far:
+
+	> pytest -n auto --cov=Model/ --cov=DesktopGui/ --cov=WebGui
+
+You should see something along the lines of this:
+
+	====================================================================================================================== test session starts ======================================================================================================================
+	platform darwin -- Python 3.9.7, pytest-6.2.5, py-1.10.0, pluggy-1.0.0
+	rootdir: /Users/tompadonaldson/LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/BehavioralStatementClassifier/source/BehavioralStatementClassifier
+	plugins: cov-2.12.1, xdist-forked-0.0.1, forked-1.3.0
+	gw0 [1] / gw1 [1] / gw2 [1] / gw3 [1] / gw4 [1] / gw5 [1] / gw6 [1] / gw7 [1] / gw8 [1] / gw9 [1] / gw10 [1] / gw11 [1] / gw12 [1] / gw13 [1] / gw14 [1] / gw15 [1] / gw16 [1] / gw17 [1] / gw18 [1] / gw19 [1] / gw20 [1] / gw21 [1] / gw22 [1] / gw23 [1]
+	.                                                                                                                                                                                                                                                         [100%]
+
+	---------- coverage: platform darwin, python 3.9.7-final-0 -----------
+	Name                                           Stmts   Miss  Cover
+	------------------------------------------------------------------
+	DesktopGui/__init__.py                             0      0   100%
+	Model/Statement.py                                18      0   100%
+	Model/__init__.py                                  0      0   100%
+	Model/tests/__init__.py                            0      0   100%
+	Model/tests/fixture_raw_statements_subset.py      18     18     0%
+	Model/tests/test_Statement.py                     25      1    96%
+	WebGui/__init__.py                                 0      0   100%
+	------------------------------------------------------------------
+	TOTAL                                             61     19    69%
+
+	======================================================================================================================= 1 passed in 3.17s =======================================================================================================================
+
 
 
 # End, for now.
