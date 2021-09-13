@@ -26,7 +26,7 @@ That is not to say that solo efforts are not important. They are. Many, if not m
 
 But creating software useful to a broader audience, and more generally applicable, requires a team. There is too much work required to produce software that actually works reliably, and then to maintain it and support users. More than one person is generally required, and these people must work together without stepping all over each other.
 
-The focus of this presentation will be a few software development techniques and tools that support teamwork. I will talk about and demo some basic infrastructure for working together, but does not address the behavioral aspects of teamwork. That is more up to you, behavior analysts.f
+The focus of this presentation will be a few software development techniques and tools that support teamwork. I will talk about and demo some basic infrastructure for working together. But the software development tools do not address the behavioral aspects of teamwork. That is more up to you, you behavior analysts.
 
 ### How to use this document
 
