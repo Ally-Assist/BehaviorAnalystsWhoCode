@@ -67,6 +67,57 @@ Here is what I did:
 1. At this point you will just need to explore a bit on your own to find your way around. Here is a good starting point: [PyCharm: Overview of the user interface](https://www.jetbrains.com/help/pycharm/guided-tour-around-the-user-interface.html)
 
 
+# Activate Python environment in Terminal
+
+In PyCharm's Terminal (see tabs at bottom of the window), type this command, to see what version of Python is enabled there. It ***should*** be the one you set above, but probably will not be. For example:
+
+	>which python
+	
+	/usr/bin/python
+	
+	>python --version
+	
+	Python 2.7.16
+
+To get it to use the correct Python environment, enter this command. You should see something like the output shown for the command, but ignore it for the moment.
+
+	>pipenv shell
+	
+	Launching subshell in virtual environment...
+
+	The default interactive shell is now zsh.
+	To update your account to use zsh, please run `chsh -s /bin/zsh`.
+	For more details, please visit https://support.apple.com/kb/HT208050.
+	bash-3.2$  . /Users/tompadonaldson/.local/share/virtualenvs/BehavioralStatementClassifier-KAKETNmX/bin/activate
+	(BehavioralStatementClassifier) bash-3.2$ exit
+	
+	
+	>which python
+	
+	~/.local/share/virtualenvs/BehavioralStatementClassifier-KAKETNmX/bin/python
+	
+	>python --version
+	
+	Python 3.9.7
+
+You should not have to set the Python environment like this again, but that is all there is to it if you do. The terminal will now have access to all Python packages installed in the project, by default.
+
+If as above you see this output from `pipenv shell`, and you have already set your default shell to `zsh`, the solution is in the preferences for the project:
+
+	The default interactive shell is now zsh.
+	To update your account to use zsh, please run `chsh -s /bin/zsh`.
+
+To fix it, go back to Preferences, then `Tools > Terminal`. Just under the `Application Settings` heading is `Shell path:`. Enter this in the text box, and apply: `/bin/zsh`. Go back to the Terminal pane in PyCharm, and enter a non-existent command. `Zsh` should complain, versus `bash` complaining:
+
+	>fubar --snafu
+	
+	zsh: command not found: fubar
+
+
+
+	
+
+
 # BehavioralStatementClassifier Package
 
 A [Python package](https://docs.python.org/3/tutorial/modules.html#packages) is code module that can be referenced by name, usually as a means of importing functionality. Our top level package will be `BehavioralStatementClassifier`. 
@@ -96,6 +147,20 @@ Now, we need to correctly identify the top level content (source) of the project
 1. Click open. 
 
 Python import statements should now find the modules of the project.
+
+
+# PyTest
+
+Be sure these PyTest packages are installed. See Preferences (i.e., Cmd-,) under Project > Python Interpreter. If these packages are not listed, click the `+` above the `Package` column and search for them:
+
+1. pytest
+
+1. pytest-cov
+
+1. pytest-forked
+
+1. pytest-xdist
+
 
 
 

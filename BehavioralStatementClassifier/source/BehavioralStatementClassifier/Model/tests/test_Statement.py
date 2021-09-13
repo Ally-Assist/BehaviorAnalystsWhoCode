@@ -31,8 +31,44 @@
 # ##############################################################################
 
 
+# Built in Python types for "hinting"
+from typing import List, AnyStr, Any, Dict
+
 from Model.Statement import Statement
 
 class TestStatement:
 
-    def test_constructor
+    def test_constructor(self):
+        """
+        Create statements to test constructor's self defenses. Create a good
+        statement, then versions with bad text and id.
+        """
+
+        someText: AnyStr = 'My first statement.'
+        aStatement: Statement = Statement(id=1, text=someText)
+        assert aStatement is not None
+        #
+        # That should have succeeded. Now check properties.
+        #
+        assert aStatement.id == 1
+        assert aStatement.text == someText
+        assert aStatement.length == len(someText)
+
+        try:
+            aBadIdStatement: Statement = Statement(id=0, text='Framis')
+            assert False, 'Should have assert failed because of bad id'
+        except AssertionError:
+            pass
+
+        try:
+            aNullTextStatement: Statement = Statement(id=1, text=None)
+            assert False, 'Should have assert failed because of missing text'
+        except AssertionError:
+            pass
+
+        try:
+            aBadIdTextStatement: Statement = Statement(id=0, text='Oops!')
+            assert False, 'Should have assert failed because of bad id.'
+        except AssertionError:
+            pass
+

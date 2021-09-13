@@ -60,6 +60,10 @@ class Statement:
     def text(self) -> AnyStr:
         return self._text
 
+    @property
+    def length(self) -> int:
+        return len(self._text)
+
     # ##########################################################################
     # CONSTRUCTOR
     # ##########################################################################
