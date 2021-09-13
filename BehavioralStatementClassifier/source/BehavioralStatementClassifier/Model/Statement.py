@@ -65,9 +65,18 @@ class Statement:
     # ##########################################################################
 
     def __init__(self, id: int, text: AnyStr):
+        """
+        Creates a new statement object and sets its id and text, if valid.
+
+        :param id: Unique identifier for this statement. Must be > 0.
+        :type id: AnyStr
+
+        :param text: Text of the behavioral (or not) statement. Length must
+        be > 0.
+        :type text: AnyStr
+        """
         assert id >= 0
-        assert text is not None
-        assert len(text) > 0
+        assert text is not None and len(text) > 0
 
         self._id = id
         self._text = text
