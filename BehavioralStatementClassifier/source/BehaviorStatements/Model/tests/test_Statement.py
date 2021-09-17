@@ -34,7 +34,12 @@
 # Built in Python types for "hinting"
 from typing import List, AnyStr, Any, Dict
 
-from Model.Statement import Statement
+
+from BehaviorStatements.Model.Statement import Statement
+
+
+
+
 
 class TestStatement:
 
