@@ -34,9 +34,9 @@ I have my local work directories for GitHub repositories under my home directory
 
 # Basic Project PyCharm Startup
 
-1. Updated to the [latest version of Python](https://www.python.org/downloads/), which was v3.9.7.
+1. Update to the [latest version of Python](https://www.python.org/downloads/), which as of Friday 17 September 2021, was v3.9.7.
 
-1. Started PyCharm
+1. Start PyCharm
 
 1. In the `File` menu, select `New Project...`
 
