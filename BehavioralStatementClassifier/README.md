@@ -24,7 +24,7 @@ That is not to say that solo efforts are not important. They are. Much, if not m
 
 • [BGL2015 Visualizer](https://basimulation.org/bgl2015-visualizer/)
 
-However, to create software that is useful to a broader audience, and which is more generally applicable, requires a team. These people must work together without stepping all over each other.
+However, to create software that is useful to a broader audience, and which is more generally applicable, requires a team. Team members must work together without stepping all over each other.
 
 The focus of this presentation will be a few software development techniques and tools that support teamwork. I will talk about and demo some basic infrastructure for working together. But the software development tools do not address the behavioral aspects of teamwork. That is more up to you, you behavior analysts.
 
