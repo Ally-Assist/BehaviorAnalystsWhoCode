@@ -14,9 +14,13 @@ tom.donaldson@performanceally.com
 Created: Saturday 11 September 2021
 
 
-# Project Setup
+# How I Set Up the Project
 
-***If you download the project from GitHub, all of this is done.*** I just want to illustrate this part of the setup process.
+***If you download the project from GitHub, all of this is done.*** 
+
+I do almost all of my work on a Mac, with forays to other forms of Unix, particularly the Ubuntu Linux variety commonly used within [Docker containers](https://www.docker.com/resources/what-container). Do I ever use MS Windows? Maybe once a year or so. Just often enough that I end up renewing my annual license for [Parallels Desktop](https://www.parallels.com/). That will probably come to an end, as Microsoft has announced that they will not support Apple's new M1 processor.
+
+I just want to illustrate this part of the setup process. I make no guarantee that this will work. Perhaps in future presentations I can pair with you to get your installation working (and update these online docs accordingly).
 
 I am starting with a local copy of the repository, initialized to the point at which it is ready to create the PyCharm Python project. We can cover how to get to this starting point elsewhere and elsewhen.
 
