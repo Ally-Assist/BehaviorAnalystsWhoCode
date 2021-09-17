@@ -475,12 +475,25 @@ Resources specific to this project:
 
 - The PyCharm Python source code is *(will be)* here: [source](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/BehavioralStatementClassifier/source)
 
+### Test Data
+
+There is a small amount of test data under the top level test directory: [BehaviorStatements/tests/data](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/BehavioralStatementClassifier/source/BehaviorStatements/tests/data). It is located their because it will be used in testing any/all components.
+
+### Test Data Easy Access
+
+There is a Python [PyTest fixture](https://docs.pytest.org/en/6.2.x/fixture.html) file what will facilitate access to the test data from anywhere within the BehaviorStatements package. Right now it is mostly a placeholder that we will flesh out as needed.
+
+• [fixture_raw_statements_subset.py](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/blob/main/BehavioralStatementClassifier/source/BehaviorStatements/tests/fixture_raw_statements_subset.py)
 
 ### The Model
 
+This initial phase will only deal with the [BehaviorStatements/Model](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/tree/main/BehavioralStatementClassifier/source/BehaviorStatements/Model).
 
+The model currently consists of two objects:
 
-***TO BE DONE***
+1. [Statement](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/blob/main/BehavioralStatementClassifier/source/BehaviorStatements/Model/Statement.py): Object for storage and identification of textual statements. Complete enough to use, and has a [TestStatement](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/blob/main/BehavioralStatementClassifier/source/BehaviorStatements/Model/tests/test_Statement.py) unit test.
+
+2. [Statements](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode/blob/main/BehavioralStatementClassifier/source/BehaviorStatements/Model/Statements.py): Collection of Statement. Will load statements, manage them,  and provide access to them. Need to create a TestStatements class to assist in developing it. Some of the constructor is written, but it does not yet load statements. All of that will be done in the demo.
 
 
 ### Main Demo
