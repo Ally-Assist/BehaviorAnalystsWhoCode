@@ -20,7 +20,9 @@ Created: Saturday 11 September 2021
 
 I do almost all of my work on a Mac, with forays to other forms of Unix, particularly the Ubuntu Linux variety commonly used within [Docker containers](https://www.docker.com/resources/what-container). Do I ever use MS Windows? Maybe once a year or so. Just often enough that I end up renewing my annual license for [Parallels Desktop](https://www.parallels.com/). That will probably come to an end, as Microsoft has announced that they will not support Apple's new M1 processor.
 
-I just want to illustrate this part of the setup process. I make no guarantee that this will work. Perhaps in future presentations I can pair with you to get your installation working (and update these online docs accordingly).
+I will illustrate this part of the setup process. I make no guarantee that this will work. Perhaps in future presentations I can pair with you to get your installation working (and update these online docs accordingly). One issue is that the setup is different if you are starting from scratch. I have been using PyCharm on and off for around two years now.
+
+# Starting Point
 
 I am starting with a local copy of the repository, initialized to the point at which it is ready to create the PyCharm Python project. We can cover how to get to this starting point elsewhere and elsewhen.
 
@@ -30,7 +32,7 @@ I have my local work directories for GitHub repositories under my home directory
 
 	~/LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/BehavioralStatementClassifier
 
-Here is what I did:
+# Basic Project PyCharm Startup
 
 1. Updated to the [latest version of Python](https://www.python.org/downloads/), which was v3.9.7.
 
@@ -73,7 +75,9 @@ Here is what I did:
 
 # Activate Python environment in Terminal
 
-In PyCharm's Terminal (see tabs at bottom of the window), type this command, to see what version of Python is enabled there. It ***should*** be the one you set above, but probably will not be. For example:
+In PyCharm's Terminal (see tabs at bottom of the window), type this command, to see what version of Python is enabled there. It ***should*** be the one you set above, but probably will not be. The default Python on macOS is v2.7, which is kept around for compatibility with legacy software. 
+
+If you are using the terminal app without a Python virtual environment, here is what you will likely see:
 
 	>which python
 	
@@ -94,7 +98,8 @@ To get it to use the correct Python environment, enter this command. You should 
 	For more details, please visit https://support.apple.com/kb/HT208050.
 	bash-3.2$  . /Users/tompadonaldson/.local/share/virtualenvs/BehavioralStatementClassifier-KAKETNmX/bin/activate
 	(BehavioralStatementClassifier) bash-3.2$ exit
-	
+
+Now if ask "which Python installation am I using", you should see something like this. This is the private virtual environment that you set up for the project. You can freely update it (more on that later) without affecting any other project.
 	
 	>which python
 	
@@ -117,7 +122,9 @@ To fix it, go back to Preferences, then `Tools > Terminal`. Just under the `Appl
 	
 	zsh: command not found: fubar
 
+Note that if you go to PyCharm's preferences, select `Project: BehavioralStatementClassifier`, then `Project Interpreter`, you will see the same path shown for the interpreter.
 
+Also note the window below the `Python Interpreter` line. That panel shows all of the Python packages that are already install for the project. If you click the `+` on the toolbar for the pane, you can add packages. You will only affect this project, and no other.
 
 	
 
