@@ -20,7 +20,7 @@ Created: Saturday 11 September 2021
 
 I do almost all of my work on a Mac, with forays to other forms of Unix, particularly the Ubuntu Linux variety commonly used within [Docker containers](https://www.docker.com/resources/what-container). Do I ever use MS Windows? Maybe once a year or so. Just often enough that I end up renewing my annual license for [Parallels Desktop](https://www.parallels.com/). That will probably come to an end, as Microsoft has announced that they will not support Apple's new M1 processor.
 
-I will illustrate this part of the setup process. I make no guarantee that this will work. Perhaps in future presentations I can pair with you to get your installation working (and update these online docs accordingly). One issue is that the setup is different if you are starting from scratch. I have been using PyCharm on and off for around two years now.
+I will illustrate part of the setup process. I make no guarantee that this will work. Perhaps in future presentations I can pair with you to get your installation working to show others what is involved (and update these online docs accordingly). One issue is that the setup is different if you are starting from scratch. I have been using PyCharm on and off for around two years now.
 
 # Starting Point
 
