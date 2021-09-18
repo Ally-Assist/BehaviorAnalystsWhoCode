@@ -26,7 +26,7 @@ But, I will recreate the steps that I can as best as I can here, for now.
 
 # Starting Point
 
-Starting with local copy of the [Ally-Assist/For-BehaviorAnalystsWhoCode repository](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode), this is how (I think) I, initialized to the PyCharm Python project. 
+Starting with local copy of the [Ally-Assist/For-BehaviorAnalystsWhoCode repository](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode), this is how *(I think)* I, initialized to the PyCharm Python project. 
 
 Install the free [Community version of PyCharm](https://www.jetbrains.com/pycharm/download/) for your machine. I cannot describe the process for installing and setting it up because (a) I already have it, and (b) it has been installed for years. As I remember it, the process is very simple on Mac.
 
@@ -50,7 +50,7 @@ I have my local work directories for GitHub repositories under my home directory
 	
 	1. Now a native file menu appears. I navigated to the location where I wanted to create the actual PyCharm Python code project (I am regretting the long directory names):
 	
-		- `LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/2021_09_25 Pinpointing Behavior Statements/2021_09_25 Pinpointing%20Behavior Statements`
+		- `LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/BehaviorAnalystsWhoCode/BehavioralStatementClassifier
 	
 	1. I clicked `New Folder`, and entered `source` as the new folder name.
 	
