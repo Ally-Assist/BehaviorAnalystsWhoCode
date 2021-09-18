@@ -60,6 +60,12 @@ Before you can continue with the instructions on setting up pipenv within PyChar
 The preferred convention seems to be to create a hidden directory under your local home directory. On macOS (or any other version of Unix), you might use this shell command:
 
 	>mkdir -p ~/.local/share/virtualenvs
+
+On Unix, this command will include hidden files in a directory listing (note the `a` option):
+
+	>ls -la ~
+
+To show hidden files in macOS Finder, click a Finder browser window, then press Command-period (**⌘.**)
 	
 You will reference your Python virtual environment directory in setup steps below.
 
