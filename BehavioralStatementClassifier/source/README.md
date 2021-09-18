@@ -48,9 +48,9 @@ I have my local work directories for GitHub repositories under my home directory
 	
 	1. To the far right of the `Location` field, I clicked the tiny folder icon.
 	
-	1. Now a native file menu appears. I navigated to the location where I wanted to create the actual PyCharm Python code project (I am regretting the long directory names):
+	1. Now a native file menu appears. I navigated to the location where I wanted to create the actual PyCharm Python code project:
 	
-		- `LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/BehavioralStatementClassifier
+		- `LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/BehavioralStatementClassifier`
 	
 	1. I clicked `New Folder`, and entered `source` as the new folder name.
 	
