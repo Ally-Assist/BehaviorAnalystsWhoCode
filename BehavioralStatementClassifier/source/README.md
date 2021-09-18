@@ -22,13 +22,15 @@ I do almost all of my work on a Mac, with forays to other forms of Unix, particu
 
 I will illustrate part of the setup process. I make no guarantee that this will work. Perhaps in future presentations I can pair with you to get your installation working to show others what is involved (and update these online docs accordingly). One issue is that the setup is different if you are starting from scratch. I have been using PyCharm on and off for around two years now.
 
+But, I will recreate the steps that I can as best as I can here, for now.
+
 # Starting Point
 
-I am starting with a local copy of the repository, initialized to the point at which it is ready to create the PyCharm Python project. We can cover how to get to this starting point elsewhere and elsewhen.
+Starting with local copy of the [Ally-Assist/For-BehaviorAnalystsWhoCode repository](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode), this is how (I think) I, initialized to the PyCharm Python project. 
 
 Install the free [Community version of PyCharm](https://www.jetbrains.com/pycharm/download/) for your machine. I cannot describe the process for installing and setting it up because (a) I already have it, and (b) it has been installed for years. As I remember it, the process is very simple on Mac.
 
-I have my local work directories for GitHub repositories under my home directory. The full path to the project folder for this project is:
+I have my local work directories for GitHub repositories under my home directory. The full path to my local project folder for this project on my Mac is:
 
 	~/LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/BehavioralStatementClassifier
 
