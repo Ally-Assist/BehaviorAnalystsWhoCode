@@ -84,15 +84,19 @@ You will reference the Python virtual environment directory that you just create
 	
 	1. To the far right of the `Location` field, I clicked the tiny folder icon.
 	
-	1. Now a native file menu appears. I navigated to the location where I wanted to create the actual PyCharm Python code project:
+	1. Now a native file menu appears. Navigated to the location where you will create the actual PyCharm Python code project:
 	
 		- `~/LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/BehavioralStatementClassifier`
 	
-	1. I clicked `New Folder`, and entered `source` as the new folder name.
+	1. I clicked `New Folder`, and entered `BehavioralStatementClassifier` as the new folder name.
 	
 	1. I clicked the `Create` button, followed by the`Open` button.
 	
-	1. From here on out, all files managed by PyCharm for the project will be under this `source` directory.
+	1. You should now have this folder in your project:
+	
+		- `~/LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/BehavioralStatementClassifier`
+	
+	1. Under this project, you will see the PyCharm "hidden" settings folder: `.idea`. If you cannot see this folder in Finder when you navigate to the new `BehavioralStatementClassifier` folder, press ⌘. (that is Command-period). This is also where the `Pipfile` and `Pipfile.lock` files will be located.
 
 1. Set up the Python interpreter.
 
