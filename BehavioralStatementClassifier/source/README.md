@@ -28,15 +28,45 @@ But, I will recreate the steps that I can as best as I can here, for now.
 
 Starting with local copy of the [Ally-Assist/For-BehaviorAnalystsWhoCode repository](https://github.com/Ally-Assist/For-BehaviorAnalystsWhoCode), this is how *(I think)* I, initialized to the PyCharm Python project. 
 
-Install the free [Community version of PyCharm](https://www.jetbrains.com/pycharm/download/) for your machine. I cannot describe the process for installing and setting it up because (a) I already have it, and (b) it has been installed for years. As I remember it, the process is very simple on Mac.
-
 I have my local work directories for GitHub repositories under my home directory. The full path to my local project folder for this project on my Mac is:
 
 	~/LocalDevelopment/AllyAssist/BehaviorAnalystsWhoCode/BehavioralStatementClassifier
 
+# Basic Python Setup
+
+### Latest Python, Please
+
+Please update to the [latest version of Python](https://www.python.org/downloads/), which as of Friday 17 September 2021, was v3.9.7.
+
+Some earlier version ***might*** work, but no guarantees there except that nothing before v3.0 will work.
+
+
+### Python `Pipenv` Virtual Environment
+
+One very nice features of the modern Python tools is the virtual environment facilities. This allows you to have multiple projects that use different versions of Python and different Python add-on packages.
+
+The latest and greatest Python virtual environment tool is Pipenv. Basic installation is this easy: [Configure a Pipenv environment](https://www.jetbrains.com/help/pycharm/pipenv.html#install-pipenv).
+
+Note that pipenv will always leave two shared files in a project. These are the "portable" files that specify what Python version and what packages are needed for the project. They are the basis of compatibility error checks, and trigger prompts to load requisite packages into your own ***private*** virtual environment. Thus, anyone who works on the project is guaranteed (more or less) to get the appropriate configuration for the project.
+
+1. Pipfile
+
+1. Pipfile.lock
+
+Before you can continue with the instructions on setting up pipenv within PyCharm, you will need to install PyCharm ***(below)***.
+
+***CAUTION:*** Do *not* create your pipenv storage location *in* the project *unless* everyone who will be working on your project with you is using the same development platform (i.e., same combination of type of computer and operating system). The virtual environment is ***your*** basic Python configuration. 
+
+The preferred convention seems to be to create a hidden directory under your local home directory. On macOS (or any other version of Unix), you might use this shell command:
+
+	>mkdir -p ~/.local/share/virtualenvs
+	
+You will reference your Python virtual environment directory in setup steps below.
+
+
 # Basic Project PyCharm Startup
 
-1. Update to the [latest version of Python](https://www.python.org/downloads/), which as of Friday 17 September 2021, was v3.9.7.
+1. Install the free [Community version of PyCharm](https://www.jetbrains.com/pycharm/download/) for your machine. I cannot describe the process for installing and setting it up because (a) I already have it, and (b) it has been installed for years. As I remember it, the process is very simple on Mac.
 
 1. Start PyCharm
 
