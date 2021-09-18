@@ -67,7 +67,7 @@ On Unix, this command will include hidden files in a directory listing (note the
 
 To show hidden files in macOS Finder, click a Finder browser window, then press Command-period (**⌘.**)
 	
-You will reference your Python virtual environment directory in setup steps below.
+You will reference the Python virtual environment directory that you just created in the setup steps below.
 
 
 # Basic Project PyCharm Startup
