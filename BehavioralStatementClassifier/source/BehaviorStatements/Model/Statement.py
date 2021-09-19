@@ -93,7 +93,7 @@ class Statement:
                              f'{id.variant}')
         if id.version != 4:
             raise ValueError(f'UUID must be RFC 4122 version 4 (i.e., '
-                             f'random). This version {id.version}')
+                             f'random). This one is version {id.version}')
 
         # Pointless to continue if there is no content
         assert text is not None and len(text) > 0
