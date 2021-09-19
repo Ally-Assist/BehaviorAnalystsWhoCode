@@ -29,6 +29,7 @@
 # For more information, see:
 #   https://docs.python.org/3/library/uuid.html
 #   https://en.wikipedia.org/wiki/Universally_unique_identifier
+#   https://datatracker.ietf.org/doc/html/rfc4122
 import uuid
 from uuid import UUID
 
@@ -74,12 +75,11 @@ class Statement:
         """
         Creates a new statement object and sets its id and text, if valid.
 
-        :param id: Unique identifier for this statement. Must be > 0.
-        :type id: AnyStr
+        :param id: Unique identifier for this statement. Must conform to RFC
+        2122 spec, variant 4.
 
         :param text: Text of the behavioral (or not) statement. Length must
         be > 0.
-        :type text: AnyStr
         """
 
         # Ensure that we have an id, and it is a very strong UUID.
