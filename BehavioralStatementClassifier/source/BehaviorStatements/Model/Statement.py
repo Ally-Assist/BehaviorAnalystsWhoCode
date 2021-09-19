@@ -24,6 +24,15 @@
 #
 # ##############################################################################
 
+# Import Universally Unique ID (UUID). Only the generator for uuid4, and the
+# class that is returned.
+#
+# For more information, see:
+#   https://docs.python.org/3/library/uuid.html
+#   https://en.wikipedia.org/wiki/Universally_unique_identifier
+import uuid
+from uuid import uuid4, UUID
+
 # Built in Python types for "hinting"
 from typing import List, AnyStr, Any, Dict
 
@@ -47,7 +56,7 @@ class Statement:
     # ##########################################################################
 
     @property
-    def id(self) -> int:
+    def id(self) -> UUID:
         return self._id
 
     @property
@@ -62,7 +71,7 @@ class Statement:
     # CONSTRUCTOR
     # ##########################################################################
 
-    def __init__(self, id: int, text: AnyStr):
+    def __init__(self, id: UUID, text: AnyStr):
         """
         Creates a new statement object and sets its id and text, if valid.
 
@@ -73,7 +82,21 @@ class Statement:
         be > 0.
         :type text: AnyStr
         """
-        assert id >= 0
+
+        # Ensure that we have an id, and it is a very strong UUID.
+        assert id is not None
+        assert isinstance(id, UUID)
+        # Provide feedback instead of assert failing. Helps in cases in which
+        # someone somewhere is generating a UUID, but not necessarily a
+        # strong one.
+        if id.variant != uuid.RFC_4122:
+            raise ValueError(f'UUID must meet the RFC 4122 spec. This one is '
+                             f'{id.variant}')
+        if id.version != 4:
+            raise ValueError(f'UUID must be RFC 4122 version 4 (i.e., '
+                             f'random). This version {id.version}')
+
+        # Pointless to continue if there is no content
         assert text is not None and len(text) > 0
 
         self._id = id
@@ -87,7 +110,7 @@ class Statement:
     # PROTECTED DATA
     # ##########################################################################
 
-    _id: int
+    _id: UUID
     _text: AnyStr
 
 

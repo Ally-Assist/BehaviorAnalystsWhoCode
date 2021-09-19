@@ -29,6 +29,7 @@
 #
 # ##############################################################################
 
+import uuid
 
 # Built in Python types for "hinting"
 from typing import List, AnyStr, Any, Dict
@@ -47,16 +48,24 @@ class TestStatement:
         Create statements to test constructor's self defenses. Create a good
         statement, then versions with bad text and id.
         """
+        goodId: uuid.UUID = uuid.uuid4()
 
         someText: AnyStr = 'My first statement.'
-        aStatement: Statement = Statement(id=1, text=someText)
+        aStatement: Statement = Statement(id=goodId, text=someText)
         assert aStatement is not None
         #
         # That should have succeeded. Now check properties.
         #
-        assert aStatement.id == 1
+        assert aStatement.id == goodId
         assert aStatement.text == someText
         assert aStatement.length == len(someText)
+
+        try:
+            aWeakIdStatement: Statement = \
+                Statement(id=uuid.uuid1(), text='Framis')
+            assert False, 'Should have assert failed because of bad id'
+        except ValueError:
+            pass
 
         try:
             aBadIdStatement: Statement = Statement(id=0, text='Framis')
@@ -65,7 +74,7 @@ class TestStatement:
             pass
 
         try:
-            aNullTextStatement: Statement = Statement(id=1, text=None)
+            aNullTextStatement: Statement = Statement(id=goodId, text=None)
             assert False, 'Should have assert failed because of missing text'
         except AssertionError:
             pass
