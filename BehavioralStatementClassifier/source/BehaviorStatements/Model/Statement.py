@@ -24,14 +24,13 @@
 #
 # ##############################################################################
 
-# Import Universally Unique ID (UUID). Only the generator for uuid4, and the
-# class that is returned.
+# Import Universally Unique ID (UUID).
 #
 # For more information, see:
 #   https://docs.python.org/3/library/uuid.html
 #   https://en.wikipedia.org/wiki/Universally_unique_identifier
 import uuid
-from uuid import uuid4, UUID
+from uuid import UUID
 
 # Built in Python types for "hinting"
 from typing import List, AnyStr, Any, Dict
