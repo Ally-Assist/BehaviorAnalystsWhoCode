@@ -4,14 +4,20 @@ Subtitle: **Software Development as a Team Process**
 
 Material related to a presentation on Sunday 25 September 2021 @ 12:00 to the Slack channel, [Behavior Analysts Who Code (BAWC)](https://www.codingbehavioranalysts.org)
 
-***This will change frequently up to the presentation date***
-
 
 Tom Donaldson
 
 tom.donaldson@performanceally.com
 
 Created: Sunday 22 August 2021
+
+---
+
+# Recording of the Presentation
+
+This is the raw recording from Zoom. Most of the video is text sized to be legible on a laptop monitor, or large tablet:
+
+- [Industrial-Strength Python Development Overview and Demo](https://www.icloud.com/iclouddrive/0LnlZ541lhb2q2MqbdC-ZH2DA#BAWC_IndustrialStrengthPython)
 
 ---
 
