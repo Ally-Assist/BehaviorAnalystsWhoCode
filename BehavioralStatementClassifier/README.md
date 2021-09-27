@@ -15,7 +15,9 @@ Created: Sunday 22 August 2021
 
 # Recording of the Presentation
 
-This is the raw recording from Zoom. Most of the video is text sized to be legible on a laptop monitor, or large tablet:
+This is the raw recording from Zoom. Most of the video is text sized to be legible on a laptop monitor, or large tablet. 
+
+*When you click the link the first time, you will be given the choice of adding it to your iCloud drive or to download a copy. Either works. If you download, well, you know where to find your downloaded files. If you add it to your iCloud drive, it copies it and presents you with an icon of the mp4 movie file to click.*
 
 - [Industrial-Strength Python Development Overview and Demo](https://www.icloud.com/iclouddrive/0LnlZ541lhb2q2MqbdC-ZH2DA#BAWC_IndustrialStrengthPython)
 
